@@ -1,0 +1,53 @@
+1. Definicja kryptografii
+	z gr. κρυπτός oraz γράφω gráfo „pisać” - czyli gałąź wiedzy o utajnianiu wiadomości 
+
+2. Co to jest kryptografia
+Kryptografia to dziedzina wiedzy o przekazywaniu informacji w sposób zabezpieczony przed niepowołanym dostępem. Współcześnie kryptologia jest uznawana za gałąź zarówno matematyki, jak i informatyki; ponadto jest blisko związana z teorią informacji, inżynierią oraz bezpieczeństwem komputerowym. Kryptologia dzieli się na:
+        1. Kryptografię: Jest to gałąź wiedzy o utajnianiu wiadomości. Kryptografia zajmuje się tworzeniem algorytmów i metod szyfrowania, które pozwalają na przekształcenie tekstu jawnego w taki sposób, żeby był nieczytelny dla osób nieuprawnionych. Proces zamiany tekstu jawnego na zaszyfrowany nazywamy szyfrowaniem, a odwrotny proces to deszyfrowanie. Klucze kryptograficzne odgrywają kluczową rolę w tym procesie.
+        2. Kryptoanalizę: To gałąź wiedzy o przełamywaniu zabezpieczeń oraz odszyfrowywaniu utajnionych informacji. Kryptoanaliza zajmuje się badaniem i analizą zaszyfrowanych wiadomości w celu odkrycia klucza lub innego elementu schematu szyfrowania. Celem jest odczytanie tekstu zaszyfrowanego bez posiadania klucza.
+Kryptologia ma szerokie zastosowanie w społeczeństwach rozwiniętych technicznie. Wykorzystuje się ją np. w rozwiązaniach zapewniających bezpieczeństwo kart bankomatowych, haseł komputerowych i handlu elektronicznego. Jednak najważniejsze zastosowania kryptologii to utajnianie informacji w wojskowości i dyplomacji, gdzie używa się najbardziej zaawansowanych funkcji i protokołów kryptograficznych
+
+3. Historia kryptografii
+- starożytna
+
+Starożytność – Początki Kryptografii:
+        ◦ Już w czasach starożytnych ludzie próbowali przekazywać wartościowe informacje w sposób utajniony. W pismach egipskich znaleziono najstarszy znany przykład szyfrowania wiadomości – w grobowcu egipskiego szlachcica Khnumhotep II, który żył około 3900 lat temu.
+        ◦ W starożytnej Grecji stosowano urządzenie zwane sykytale, które umożliwiało szyfrowanie tekstu. Na drewnianą laskę nawijano pasek pergaminu, a odbiorca z identyczną laską mógł odczytać wiadomość.
+        ◦ Rzymianie osiągnęli najwyższy poziom kryptografii w starożytności. Szyfr Cezara, oparty na przesuwaniu liter w alfabecie łacińskim, jest jednym z najbardziej znanych przykładów.
+    2. Średniowiecze i Renesans – Kolebka Kryptoanalizy:
+        ◦ W tym okresie używano prostego szyfrowania podstawieniowego.
+        ◦ Arabski filozof Al-Kindi napisał traktat o odczytywaniu zaszyfrowanych listów.
+        ◦ Wynaleziono matrycę szyfrującą, a także inne techniki steganografii.
+    3. Wzrost Tempa Rozwoju Kryptografii:
+        ◦ Po II wojnie światowej nastąpił przełom w dziedzinie elektroniki.
+        ◦ Algorytmy i techniki kryptograficzne zaczęły się rozwijać coraz szybciej.
+    4. Kryptografia XX wieku:
+        ◦ Współczesne metody kryptograficzne, takie jak algorytmy symetryczne i asymetryczne, zyskały popularność.
+        ◦ Wprowadzono standardy, np. DES (Data Encryption Standard) i RSA (Rivest–Shamir–Adleman).
+    5. Kryptografia XXI wieku – Początki Kryptowalut:
+        ◦ Kryptografia jest nieodzowna w świecie cyfrowym, a jej rola jest kluczowa.
+        ◦ Towarzyszy technologiom takim jak Bitcoin i Blockchain.
+        ◦ Kryptowaluty wykorzystują zaawansowane techniki kryptograficzne do zabezpieczania transakcji i prywatności użytkowników
+
+- współczesna:
+
+
+
+4. Terminologia
+
+Szyfrowanie: Proces zamiany tekstu jawnego na zaszyfrowany (szyfrogram). Algorytmy kryptograficzne służą do przeprowadzenia tego procesu. Klucze kryptograficzne odgrywają kluczową rolę w szyfrowaniu.
+    1. Deszyfrowanie: Odwrotny proces, czyli zamiana tekstu zaszyfrowanego na powrót w możliwy do odczytania tekst jasny. Bez dostępu do klucza nie można odtworzyć tekstu jawnego.
+    2. Integralność danych: Zapewnienie niezmienności danych w czasie procesu przekazywania.
+    3. Uwierzytelnianie: Pewność co do pochodzenia danych.
+    4. Niezaprzeczalność: Nadawca nie może wyprzeć się faktu, że był nadawcą wiadomości.
+Klucz: 
+5. Klucz to tajny parametr używany w procesie szyfrowania i deszyfrowania. Istnieją dwa rodzaje kluczy:
+            ▪ Klucz publiczny: Jest dostępny publicznie i służy do szyfrowania wiadomości. Może go użyć każdy, kto chce przesłać zaszyfrowaną wiadomość do właściciela klucza prywatnego.
+            ▪ Klucz prywatny: Jest tajny i służy do deszyfrowania wiadomości zaszyfrowanych kluczem publicznym. Tylko właściciel klucza prywatnego może go używać.
+6. Tekst jawny: To oryginalna, niezaszyfrowana wiadomość. Jest to treść, którą chcemy przekazać, ale bez żadnych modyfikacji.
+7. Kryptogram: To zaszyfrowana wiadomość (tekst zaszyfrowany). Kryptogram jest wynikiem zastosowania algorytmu kryptograficznego do tekstu jawnego przy użyciu odpowiedniego klucza.
+       8. Kryptosystem: To kompletny system kryptograficzny, który obejmuje zarówno proces szyfrowania, jak i deszyfrowania. Składa się z algorytmów, kluczy, protokołów i procedur, które umożliwiają bezpieczne przekazywanie informacji między stronami.
+
+
+
+Źródlo : wikipedia

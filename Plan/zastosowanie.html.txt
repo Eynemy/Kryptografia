@@ -1,0 +1,16 @@
+    1. Wojskowość i Dyplomacja:
+        ◦ Kryptografia jest niezbędna w celu utajniania informacji w środowiskach wojskowych i dyplomatycznych.
+        ◦ Bezpieczne przekazywanie tajnych wiadomości oraz komunikacja między państwami opiera się na zaawansowanych technikach kryptograficznych.
+    2. Bezpieczeństwo Komputerowe:
+        ◦ Kryptografia jest używana do zabezpieczania haseł komputerowych, danych użytkowników oraz transakcji online, kont bankowych.
+        ◦ Bezpieczeństwo kart bankomatowych i płatności elektronicznych również opiera się na algorytmach kryptograficznych.
+    3. Handel Elektroniczny i Kryptowaluty:
+        ◦ W handlu elektronicznym kryptografia chroni dane klientów, zapewnia poufność transakcji i ochronę przed oszustwami.
+        ◦ Kryptowaluty, takie jak Bitcoin, wykorzystują zaawansowane techniki kryptograficzne do bezpiecznego przesyłania wartości między użytkownikami.
+    4. Zabezpieczanie Danych Osobowych:
+        ◦ W dobie cyfrowej ochrona danych osobowych jest kluczowa.
+        ◦ Kryptografia pomaga w bezpiecznym przesyłaniu informacji, takich jak dane medyczne czy dane klientów firm.
+    5. Bezpieczeństwo Sieci Komputerowych:
+        ◦ Kryptografia jest stosowana w protokołach VPN, SSL/TLS oraz w zabezpieczaniu komunikacji między serwerami i klientami.
+    6. Internet Rzeczy (IoT):
+        ◦ W świecie IoT, gdzie urządzenia komunikują się ze sobą, kryptografia jest niezbędna do zabezpieczania przesyłanych danych.

@@ -1,0 +1,51 @@
+W dziedzinie kryptografii można wyróżnić różne metody i techniki, które służą do zabezpieczania informacji. Oto kilka kluczowych metod:
+    1. Kryptografia symetryczna:
+        ◦ W tej metodzie używamy tego samego klucza zarówno do szyfrowania, jak i deszyfrowania.
+        ◦ Przykładem jest szyfr Cezara, gdzie każda litera tekstu jawnego jest przesuwana o stałą liczbę pozycji w alfabecie.
+        ◦ Algorytmy takie jak AES (Advanced Encryption Standard) również działają na zasadzie kryptografii symetrycznej.
+    2. Kryptografia klucza publicznego (asymetryczna):
+        ◦ W tej metodzie używamy dwóch różnych kluczy: klucza publicznego i klucza prywatnego.
+        ◦ Klucz publiczny jest dostępny publicznie i służy do szyfrowania wiadomości. Klucz prywatny jest tajny i służy do deszyfrowania.
+        ◦ Przykładem jest algorytm RSA.
+    3. Kryptoanaliza:
+        ◦ To gałąź kryptologii zajmująca się przełamywaniem zabezpieczeń.
+        ◦ Kryptoanalityk analizuje zaszyfrowane wiadomości w celu odkrycia klucza lub innych elementów schematu szyfrowania.
+    4. Protokoły kryptograficzne:
+        ◦ To zbiór reguł i procedur, które umożliwiają bezpieczną komunikację między stronami.
+        ◦ Protokoły definiują, jakie algorytmy i klucze są używane w procesie szyfrowania i deszyfrowania.
+    5. Kryptosystemy hybrydowe:
+        ◦ Kombinują cechy kryptografii symetrycznej i asymetrycznej.
+        ◦ Wykorzystują obie metody w celu uzyskania większej wydajności i bezpieczeństwa.
+-======-=-=--==-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--==-=--=-
+do metod:
+1. Opisanie metody.
+2. Wzór matematyczny na metodę.
+3. Zdjęcie dla starożytnych metod
+3. Przetestuj sam te metodę. 
+
+Metody Starożytne:
+    1. Podmiana Symboli:
+        ◦ W starożytności stosowano podstawową formę kryptografii, polegającą na zamianie symboli lub liter.
+        ◦ Przykładem jest szyfr Cezara, gdzie litery były przesuwane o stałą liczbę pozycji w alfabecie łacińskim.
+    2. Spartański Skytale:
+        ◦ W starożytnej Sparcie wojownicy używali skytale do szyfrowania wiadomości.
+        ◦ Skytale to urządzenie, na które nawijano pergamin, a odbiorca odczytywał wiadomość, owijając go wokół podobnego cylindra.
+    3. Rzymski Szyfr Cezara:
+        ◦ Rzymianie osiągnęli zaawansowany poziom kryptografii.
+        ◦ Szyfr Cezara polegał na przesuwaniu liter w zaszyfrowanej wiadomości o określoną liczbę miejsc w alfabecie łacińskim.
+Metody Nowoczesne:
+    1. Kryptografia Symetryczna:
+        ◦ Wykorzystuje ten sam klucz do szyfrowania i deszyfrowania.
+        ◦ Przykładem jest algorytm AES (Advanced Encryption Standard).
+    2. Kryptografia Asymetryczna (Klucza Publicznego):
+        ◦ Używa dwóch różnych kluczy: klucza publicznego i klucza prywatnego.
+        ◦ Klucz publiczny służy do szyfrowania, a klucz prywatny do deszyfrowania.
+        ◦ Przykładem jest algorytm RSA.
+    3. Funkcje Hashujące:
+        ◦ Tworzą skróty (hashe) z danych wejściowych.
+        ◦ Przykładem jest funkcja SHA-256 używana w blockchainie.
+    4. Zaawansowane Techniki:
+        ◦ Schematy Wielopodpisowe: Pozwalają na podpisywanie wiadomości przez wiele stron.
+        ◦ Dowody Zerowej Wiedzy: Umożliwiają potwierdzenie informacji bez ujawniania treści.
+        ◦ Szyfrowanie Homomorficzne: Pozwala na wykonywanie operacji na zaszyfrowanych danych.
+        ◦ Kryptografia Progowa: Ochrona prywatności w systemach opieki zdrowotnej i innych dziedzinach.
