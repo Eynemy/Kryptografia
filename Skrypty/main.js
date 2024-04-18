@@ -72,7 +72,7 @@ $("span:eq("+letter_count+")").addClass("glow");
 letter_count++;
 if (letter_count >= word.length) {
     finished = true;
-    setTimeout(reset, 1500);
+    setTimeout(reset, 15000);  //czas do resetu
 } else {
     setTimeout(inc, 1000);
 }
@@ -81,7 +81,7 @@ if (letter_count >= word.length) {
 function reset() {
 letter_count = 0;
 finished = false;
-setTimeout(inc, 1000);
-setTimeout(write, 75);
+setTimeout(inc, 500); // czas pojawianai sie liter(1000)
+setTimeout(write, 75); // czas pisania(75)
 $("span").removeClass("glow");
 }
