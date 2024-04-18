@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --dark-blue: #020b13;
+            --white:#d7dee4;
+            --light-green: #84e808;
+        }
+        body{
+            background-color: var(--dark-blue);
+        }
+        .hmb_link {
+            outline: none;
+            font-size: 36px;
+            text-transform: uppercase;
+            outline: 0 !important;
+            color: var(--white);
+            white-space: nowrap;
+            height: 50px;
+            position: relative;
+            padding: 0px 10px 0px 5px;
+        }
+        .hmb_link:hover {
+            background: var(--white);
+            color: var(--dark-blue);
+            border-radius: 2%;
+            height: 50px;
+        }
+        .hmb_link:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: 0;
+            border-top: 15px solid var(--dark-blue);
+            border-left: 15px solid rgba(255, 0, 0, 0);
+            width: 0;
+        }
+        .hover {
+            position: relative;
+            display: inline-block;
+        }
+        .hmb-comment{
+            text-align: left;
+            display: none;
+            transition: opacity 0.3s ease;
+            color: var(--light-green);
+            position: absolute;
+            font-size: 15px;
+            top: 50%;
+            right: -20px; /* Zmieniono na 100% */
+        }
+        #hmb-comment-text{
+            font-size: 7px;
+        }
+        .hover:hover .hmb-comment{
+            display: block;
+        }
+        #animatedText {
+            font-family: 'Space Mono', monospace;
+            padding: 0rem clamp(1rem, 2vw, 3rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1 id="animatedText" data-value="HYPERPLEXED">HYPERPLEXED</h1>
+        <h1 id="animatedText" data-value="ANIMATED">ANIMATED</h1>
+        <div class="hover"><a href="" class="hmb_link" id="animatedText" data-value="tesssst">tesssst</a><span class="hmb-comment" id="hmb-comment-text">Strona <br>001</span></div>
+    </div>
+    <script src="/Skrypty/animated-text.js"></script>
+</body>
+</html>

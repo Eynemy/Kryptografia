@@ -1,15 +1,27 @@
+:root{
+    /* --dark-blue: #08243c; */
+    --dark-blue: #020b13;
+    --teal: #085c54;
+    --ligth-teal: #10aca4;
+    --light-green: #84e808;
+    --white:#d7dee4;
+    /* --black: #0c1718; */
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    
 }
 
 body{
     font-family: sans-serif;
     min-height: 100%;
-    color: rgb(85, 85, 85);
+    color: var(--white);
+    background-color: var(--dark-blue)
 }
 /* HEADER START */
 
@@ -18,6 +30,12 @@ body{
 }
 .logo-name{
     width: 20%;
+    
+}
+.logo-img{
+    position: relative;
+    top:-10px;
+    width: 40px;
 }
 nav{
     width: 60%;
@@ -36,10 +54,9 @@ nav{
 .name-text{
     font-size: 18px;
     padding: 0px 0px;
-    color: black;
+    color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
-    /* background-color: black; */
 }
 /* NAV START */
 .nav-wrapper{
@@ -47,8 +64,10 @@ nav{
     top: 0;
     width: 100%;
     height: 58px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--teal);
+    /* box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2); */
+    /* box-shadow: 0px 0px 15px  #e5e7eb; */
+    box-shadow: 0px 0px 15px  var(--ligth-teal);
 
 }
 .scroll-bar{
@@ -56,25 +75,26 @@ nav{
     z-index: -1;
     height: 58px;
     width: 0;
-    background-color: rgba(84, 76, 76, 0.1);
+    /* background-color: rgba(84, 76, 76, 0.1); */
+    background-color: rgba(4, 35, 39, 0.1);
 }
 nav a{
+    font-family: 'Calibri', monospace;
     text-decoration: none;
-    color: #555;
+    color: var(--white);
     padding: 0 20px;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
+    font-size: 20px;
 }
 /* HAMBURGER MENU START */
-:root{
-    --hmb-menu-color:  rgb(30, 32, 41);
-}
 .hamburger-menu {
     /* background-color:  rgb(34, 37, 49); */
-    background-color:  var(--hmb-menu-color);
-    border: rgb(255, 255, 255,0.5) solid 2px;
-    box-shadow: #ffffff 0px 0px 10px 2px;
+    background-color:  var(--dark-blue);
+    /* border: rgb(255, 255, 255,0.5) solid 2px; */
+    /* border: rgba(0, 0, 0, 0.5) solid 2px; */
+    box-shadow: var(--dark-blue) 0px 0px 10px 2px;
     /* height: 100vh; */
     height: 96vh;
     width: 100%;
@@ -106,7 +126,7 @@ nav a{
 .hamburger-button span {
     height: 5px;
     width: 100%;
-    background-color: #6F86FF;
+    background-color: var(--white);
     border-radius: 25px;
     position: absolute;
     left: 50%;
@@ -136,38 +156,50 @@ nav a{
 }
 /* NAV LINKS */
 .hmb_link {
+    outline: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    outline: 0 !important;
+    color: var(--white);
+    white-space: nowrap;
+    height: 50px;
     position: relative;
     padding: 0px 10px 0px 5px;
-  }
-
-.hmb_link:hover {
-    background: red;
-    border-radius: 2%;
 }
-
+.hmb_link:hover {
+    background: var(--white);
+    color: var(--dark-blue);
+    border-radius: 2%;
+    height: 50px;
+}
 .hmb_link:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -1px;
     right: 0;
-    border-top: 10px solid var(--hmb-menu-color);
-    border-left: 10px solid rgb(255, 0, 0,0);
+    border-top: 15px solid var(--dark-blue);
+    border-left: 15px solid rgba(255, 0, 0, 0);
     width: 0;
 }
-
-
+.hover {
+    position: relative;
+    display: inline-block;
+}
 .hmb-comment{
     text-align: left;
     display: none;
     transition: opacity 0.3s ease;
-    color: wheat;
-    position: relative;
+    color: var(--light-green);
+    position: absolute;
     font-size: 15px;
-    top: -40px;
-    left: 150px;
+    top: 60%;
+    right: -25px; 
+}
+#hmb-comment-text{
+    font-size: 7px;
 }
 .hover:hover .hmb-comment{
-   display: block;
+    display: block;
 }
 
 /* KONIEC NAV */
@@ -183,15 +215,22 @@ main{
 
 /* FOOTER START */
 footer{
-    background-color: rgb(30, 45, 62);
+    background-color: var(--teal);
     text-align: center;
     font-size: 18px;
     color: white;
-    border-top: 1px solid rgb(0, 0, 0);
+    /* border-top: 1px solid var(--ligth-teal); */
+    box-shadow: 0px 0px 15px  var(--ligth-teal);
 }
 /* FOOTER END */
-
-
-
+#animatedText {
+    font-family:  monospace;
+}
+.hover > #animatedText {
+    font-family: 'Space Mono', monospace;
+    /* font-size: clamp(3rem, 10vw, 10rem); */
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
 
 

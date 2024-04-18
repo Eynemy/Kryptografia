@@ -7,8 +7,26 @@ Kryptografia to dziedzina wiedzy o przekazywaniu informacji w sposób zabezpiec
         2. Kryptoanalizę: To gałąź wiedzy o przełamywaniu zabezpieczeń oraz odszyfrowywaniu utajnionych informacji. Kryptoanaliza zajmuje się badaniem i analizą zaszyfrowanych wiadomości w celu odkrycia klucza lub innego elementu schematu szyfrowania. Celem jest odczytanie tekstu zaszyfrowanego bez posiadania klucza.
 Kryptologia ma szerokie zastosowanie w społeczeństwach rozwiniętych technicznie. Wykorzystuje się ją np. w rozwiązaniach zapewniających bezpieczeństwo kart bankomatowych, haseł komputerowych i handlu elektronicznego. Jednak najważniejsze zastosowania kryptologii to utajnianie informacji w wojskowości i dyplomacji, gdzie używa się najbardziej zaawansowanych funkcji i protokołów kryptograficznych
 
+2.1
+Kryptografia to praktyka szyfrowania przesyłanych informacji, tak aby mogły być interpretowane tylko przez zamierzonego odbiorcę.
+Od czasów starożytności, praktyka wysyłania tajnych wiadomości była powszechna w prawie wszystkich głównych cywilizacjach.
+We współczesnych czasach, kryptografia stała się kluczowym elementem cyberbezpieczeństwa.
+Od zabezpieczania codziennych osobistych wiadomości i uwierzytelniania cyfrowych podpisów,
+przez ochronę informacji o płatnościach podczas zakupów online, aż po ochronę tajnych danych i 
+komunikacji rządowej - kryptografia umożliwia prywatność w świecie cyfrowym.
+
+Kryptografia to proces ukrywania lub kodowania informacji w taki sposób, aby tylko osoba, dla której wiadomość była przeznaczona,
+ mogła ją odczytać. Sztuka kryptografii jest używana do kodowania wiadomości od tysięcy lat i nadal jest używana w kartach bankowych,
+  hasłach komputerowych i handlu elektronicznym.
+
+
 3. Historia kryptografii
 - starożytna
+Do czasów nowożytnych kryptografia była związana wyłącznie z tajnością przekazywanych informacji, przekształcaniem wiadomości z formy zrozumiałej w niezrozumiałą i z powrotem – w celu wykluczenia jej odczytania przez osoby niemające klucza do odszyfrowania, a które mogłyby tę wiadomość przechwycić lub podsłuchać
+
+https://www.ibm.com/blog/cryptography-history/
+
+https://www.fortinet.com/resources/cyberglossary/what-is-cryptography
 
 Starożytność – Początki Kryptografii:
         ◦ Już w czasach starożytnych ludzie próbowali przekazywać wartościowe informacje w sposób utajniony. W pismach egipskich znaleziono najstarszy znany przykład szyfrowania wiadomości – w grobowcu egipskiego szlachcica Khnumhotep II, który żył około 3900 lat temu.

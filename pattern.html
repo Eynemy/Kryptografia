@@ -11,16 +11,16 @@
         <div class="scroll-bar"></div>
         <div class="logo-name">
             <div class="logo">
-                <a href="index.html"><img src="Obrazy/" alt="logo"></a>
+                <a href="index.html"><img src="Obrazy/logo.png" alt="logo" class="logo-img"></a>
             </div>
             <div class="name">
                 <a href="" class="name-text">Kryptografia</a>
             </div>
         </div>
         <nav>
-            <a>home</a>
-            <a>product</a>
-            <a>about</a>
+            <a href="#definicja" id="animatedText" data-value="definicja">definicja</a>
+            <a href="#terminologia" id="animatedText" data-value="terminologia">terminologia</a>
+            <a href="#historia" id="animatedText" data-value="historia">historia</a>
         </nav>
         <div class="hamburger-button">
             <span></span>
@@ -28,10 +28,23 @@
             <span></span>
         </div>
         <div class="hamburger-menu">
-            <ul>
-                <li><div class="hover"><a href="" class="hmb_link">TEST</a><span class="hmb-comment">Strona <br>001</span></div>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+            <div class="hover">
+                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText" data-value="strona">Strona</b> 
+                    <!-- <br>001 -->
+                </span>
+            </div>
+            <div class="hover">
+                <a href="" class="hmb_link" id="animatedText" data-value="tesssst">tesssst</a>
+                <span class="hmb-comment" id="hmb-comment-text">Strona <br>001</span>
+            </div>
+            <div class="hover"><a href="" class="hmb_link" >TEST<span class="hmb-comment" id="hmb-comment-text">Strona <br>002</span></a></div>
+            <div class="hover"><a href="" class="hmb_link">TEST<span class="hmb-comment"><p>Strona <br>003</p></span></a></div>
+            <div class="hover"><a href="" class="hmb_link">TEST<span class="hmb-comment">Strona <br>004</span></a></div>
+            <div class="hover"><a href="" class="hmb_link">TEST<span class="hmb-comment">Strona <br>005</span></a></div>
+            <div class="hover"><a href="" class="hmb_link">TEST<span class="hmb-comment">Strona <br>006</span></a></div>
+            <div class="hover"><a href="" class="hmb_link">TEST<span class="hmb-comment">Strona <br>007</span></a></div>
                 
             </ul>
         </div>
@@ -98,6 +111,7 @@
     
     <script src="Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>
+    <script src="/Skrypty/animated-text.js"></script>
     <footer>Mateusz Zimny</footer>
 </body>
 </html>
