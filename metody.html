@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Obrazy/icon.ico">
+    <link rel="stylesheet" href="Style/pattern.css">
+    <link rel="stylesheet" href="Style/wstep.css">
+    <title>Kryptografia</title>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="scroll-bar"></div>
+        <div class="logo-name">
+            <div class="logo">
+                <a href="index.html"><img src="Obrazy/icon.png" alt="logo" class="logo-img"></a>
+            </div>
+            <div class="name">
+                <a href="" class="name-text">Kryptografia</a>
+            </div>
+        </div>
+        <nav>
+            <span class="list_icon1" style="display: none;">&#10065;</span>
+            <a href="#definicja" id="animatedText" data-value="podstawieniowe">podstawieniowe</a>
+            <span class="list_icon2" style="display: none;">&#10065;</span>
+            <a href="#terminologia" id="animatedText" data-value="przestawieniowe">przestawieniowe</a>
+            <span class="list_icon3" style="display: none;">&#10065;</span>
+            <a href="#historia" id="animatedText" data-value="synchroniczne">synchroniczne</a>
+        </nav>
+        <div class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hover">
+                <a href="index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText2" data-value="001">001</b> 
+                </span>
+            </div>
+            <div class="hover">
+                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText3" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText4" data-value="001">001</b> 
+                </span>
+            </div>
+            <div class="hover">
+                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText2" data-value="001">001</b> 
+                </span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <span id="headline0"></span>
+        <div class="mini_hero_section" >
+            <h1 id="headline1">Metody szyfrowania</h1>
+        </div>
+        <div class="PictureText" id="headline2">
+            
+            <div class="PictureText-Foto">
+                <img src="Obrazy/OIG4.jpeg">
+            </div>
+            <div class="PictureText-Text">
+                <h2>Szyfry przestawieniowe</h2><br>
+                <p>
+                    Szyfry przestawieniowe to jedna z klasycznych metod szyfrowania. Charakteryzują się tym, że w zaszyfrowanym tekście
+                    występują wszystkie znaki z tekstu jawnego, ale w innej kolejności. Szyfry należące do tej grupy zmieniają kolejność
+                    liter w szyfrowanym tekście według określonego schematu.
+                </p>
+                <br>
+                <p>
+                    Najprostszym przykładem szyfru przestawieniowego jest pisanie wspak. Inne przykłady to zamiana sąsiadujących liter czy przesunięcie spółgłosek o jedno miejsce. W obu przypadkach, kolejne pary znaków zamieniamy miejscami.
+                </p>
+            </div>
+        </div>
+        <div class="Content_Block3">
+            <div class="Content_Block3_Left">
+                <h4>Szyfr płotkowy</h4>
+                <p>Szyfr płotkowy to forma szyfru przestawieniowego,  tekst jawny jest zapisywany w dół i po przekątnej na kolejnych rzędach wyimaginowanego płotu, a następnie porusza się w górę, gdy dotrzemy do dołu. Wiadomość jest następnie odczytywana w kolejnymi wierszami od góry.</p>
+                <br><p>Na przykład:
+                    <br>Tekst jawny: "KRYPTOGRAFIA"
+                    <br>Klucz: "3" (liczba wierszy)
+                </p>
+                <table class="szyfry_przestawne">
+                    <tr>
+                        <td>K</td><td>-</td><td>-</td><td>-</td><td>T</td><td>-</td><td>-</td><td>-</td><td>A</td><td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td><td>R</td><td>-</td><td>P</td><td>-</td><td>O</td><td>-</td><td>R</td><td>-</td><td>F</td><td>-</td><td>A</td>
+                    </tr>
+                    <tr>
+                        <td>-</td><td>-</td><td>Y</td><td>-</td><td>-</td><td>-</td><td>G</td><td>-</td><td>-</td><td>-</td><td>I</td><td>-</td>
+                    </tr>
+                </table>
+                <p>Szyfrogram: "KTARPORFAYGI"</p>
+            </div>
+            <div class="Content_Block3_Right">
+                <h4>Szyfr kolumnowy</h4>
+                <p>
+                    W połowie XVII wieku Samuel Morland wprowadził wczesną formę transpozycji kolumnowej. Została ona dalej rozwinięta znacznie później, stając się bardzo popularna pod koniec XIX wieku i w XX wieku, z francuskimi wojskowymi, japońskimi dyplomatami i sowieckimi szpiegami korzystającymi z tej zasady.
+                </p><br>
+                <p>
+                    W transpozycji kolumnowej, wiadomość jest zapisywana w rzędach o stałej długości,
+                     a następnie odczytywana ponownie kolumna po kolumnie, a kolumny są wybierane w pewnym przetasowanym porządku.
+                      Zarówno szerokość rzędów, jak i permutacja kolumn są zwykle definiowane przez słowo kluczowe.
+                       Na przykład, słowo kluczowe ZEBRA ma długość 5 (więc rzędy mają długość 6), a permutacja jest definiowana przez
+                        porządek alfabetyczny liter w słowie kluczowym. W tym przypadku, porządek byłby<br> “6 3 2 4 1”.
+                </p><br>
+                <p>Na przykład:<br>
+                    Tekst jawny: "KRYPTOGRAFIA"
+                    <br>Klucz: "KOT" (3 kolumny, numerowanie kolumn 1 2 3)
+                    <table class="szyfry_przestawne">
+                        <tr>
+                            <td>1</td><td>2</td><td>3</td>
+                        </tr>
+                        <tr>
+                            <td>K</td><td>R</td><td>Y</td>
+                        </tr>
+                        <tr>
+                            <td>P</td><td>T</td><td>O</td>
+                        </tr>
+                        <tr>
+                            <td>G</td><td>R</td><td>A</td>
+                        </tr>
+                        <tr>
+                            <td>F</td><td>I</td><td>A</td>
+                        </tr>
+                    </table>
+                    <p>Szyfrogram: KPGFRTTIYOAA</p>
+                </p>
+            </div>
+            <div class="Content_Block3_Bottom">
+                <h2 style="padding-left: 2%;">Zaszyfruja dane!</h2>
+                <div class="Content_Block3_Bottom_Left">
+                    <form id="tlumacz">
+                        <select name="select">
+                            <option>Szyfr Płotkowy</option>
+                            <option>Szyfr Kolumnowy</option>
+                        </select><br>
+                        <textarea id="input" rows="4"></textarea>
+                        <button onclick="">Zaszyfruj</button>
+                    </form>
+                </div>
+                <div class="Content_Block3_Bottom_Right">
+                    <form name="odtlumacz" class="convert-space">
+                        <textarea id="input" rows="4"></textarea>
+                        <button onclick="">Odszyfruj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="TextPicture" id="headline3">
+            
+            <div class="PictureText-Text">
+                <h2>Szyfry podstawieniowe</h2><br>
+                <p>
+                    Szyfrowanie podstawieniowe to technika kryptograficzna, w której jednostki tekstu jawnego (niezaszyfrowanego)
+                    są zastępowane szyfrogramem (zaszyfrowanym tekstem) w określony sposób za pomocą klucza. “Jednostkami” mogą być pojedyncze
+                    litery, pary liter, trójki liter, mieszanki powyższych i tak dalej. Odbiorca odszyfrowuje tekst, wykonując odwrotny proces
+                    podstawienia, aby wydobyć oryginalną wiadomość. Współcześnie, ze względu na łatwość złamania, szyfry podstawieniowe nie są
+                    już używane do zapewnienia bezpieczeństwa komunikacji.
+                </p>
+            </div>
+            <div class="PictureText-Foto">
+                <img src="Obrazy/OIG4.jpeg">
+            </div>
+        </div>
+        <div class="blocks4">
+            <div class="block1">
+                <div class="block1-Left">
+                    <div class="console">
+                        <h2>Zaszyfruj dane!</h2>
+                        <form name="odtlumacz" class="convert2">
+                            <textarea id="input" rows="4"></textarea>
+                            <button onclick="">Zaszyfruj</button>
+                            <button onclick="">Odszyfruj</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="block1-Right">
+                    <h2>Szyfr Cezara</h2>
+                    <p>Jest to jedna z najprostszych technik szyfrowania, znana również jako szyfr przesuwający. 
+
+                        Każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie. 
+                        
+                        Na przykład, jeżeli zdefiniujemy przesunięcie na “2”, litera “a” zostanie w takim szyfrze zastąpiona literą “c” (ponieważ “a” jest pierwszą literą alfabetu a “c” trzecią). </p>
+                    <img src="Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="margin-left: 28%;padding-top: 5%;">
+                </div>
+            </div>
+            <div class="block2">
+                
+                <div class="block2-Left">
+                    <img src="Obrazy/szyfr_cezara.png">
+                </div>
+                <div class="block2-Right">
+                    <h4>Psełdokod</h4>
+                    <img src="Obrazy/Psełdokod1.png">
+               
+                </div>
+            </div>
+        </div>
+        <div class="PictureText" id="headline4">
+            
+            <div class="PictureText-Foto">
+                <img src="Obrazy/OIG4.jpeg">
+            </div>
+            <div class="PictureText-Text">
+                <h2>Szyfry synchroniczne</h2><br>
+                <p>
+                    Kryptografia symetryczna, znana również jako kryptografia z kluczem tajnym, wykorzystuje pojedynczy klucz zarówno do
+                    procesów szyfrowania, jak i deszyfrowania. Klucz ten nie jest powiązany z użytkownikiem (nadawcą lub odbiorcą wiadomości),
+                    a z wykonywaną operacją.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="Skrypty/scroll-bar.js"></script>
+    <script src="/Skrypty/hamburger-menu.js"></script>
+    <script src="/Skrypty/animated-text.js"></script>
+    <script src="/Skrypty/buttons.js"></script>
+    <footer>Mateusz Zimny</footer>
+</body>
+</html>

@@ -31,3 +31,50 @@ document.querySelectorAll("#animatedText").forEach(element => {
     element.onmouseover = animateText;
     window.addEventListener('load', () => animateText({target: element}));
 });
+
+// document.querySelectorAll(".hamburger-menu #animatedText").forEach(element => {
+//     let isAnimating = false; // Dodajemy flagę, która będzie śledzić, czy animacja jest już w trakcie
+//     setInterval(function() {
+//         const test = document.querySelector('.hamburger-menu');
+//         if (test && test.classList.contains('active') && !isAnimating) {
+//             isAnimating = true; // Ustawiamy flagę na true, ponieważ zaczynamy animację
+//             animateText({target: element});
+//         } else if (!test.classList.contains('active')) {
+//             isAnimating = false; // Resetujemy flagę na false, ponieważ animacja się zakończyła
+//         }
+//     }, 100); // Sprawdź co sekundę
+// });
+
+document.querySelectorAll(".hamburger-menu #animatedText").forEach(element => {
+    let isAnimating = false; // Dodajemy flagę, która będzie śledzić, czy animacja jest już w trakcie
+    setInterval(function() {
+        const test = document.querySelector('.hamburger-menu');
+        if (test && test.classList.contains('active') && !isAnimating) {
+            isAnimating = true; // Ustawiamy flagę na true, ponieważ zaczynamy animację
+            animateText({target: element});
+        } else if (!test.classList.contains('active')) {
+            isAnimating = false; // Resetujemy flagę na false, ponieważ animacja się zakończyła
+        }
+    }, 100); // Sprawdź co sekundę
+});
+
+
+
+
+
+
+var parents = document.querySelectorAll('.hover');
+parents.forEach(parent => {
+    parent.onmouseover = function() {
+        var element1 = document.querySelector('#animatedText1');
+        var element2 = document.querySelector('#animatedText2');
+        animateText({target: element1});
+        animateText({target: element2});
+    }
+});
+
+
+
+
+
+

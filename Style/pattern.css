@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Montserrat = logonam, Ubuntu-mono = nav a,Arial - hero section, */
+
+
 :root{
     /* --dark-blue: #08243c; */
     --dark-blue: #020b13;
@@ -52,6 +56,8 @@ nav{
 }
 
 .name-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     font-size: 18px;
     padding: 0px 0px;
     color: var(--white);
@@ -60,6 +66,7 @@ nav{
 }
 /* NAV START */
 .nav-wrapper{
+    z-index: 1000;
     position: sticky;
     top: 0;
     width: 100%;
@@ -79,15 +86,19 @@ nav{
     background-color: rgba(4, 35, 39, 0.1);
 }
 nav a{
-    font-family: 'Calibri', monospace;
+    font-family: "Ubuntu Mono", monospace !important;
     text-decoration: none;
     color: var(--white);
     padding: 0 20px;
-    font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 20px;
 }
+.list_icon1,.list_icon2,.list_icon3{
+    position: relative;
+    right: -2%;
+}
+
 /* HAMBURGER MENU START */
 .hamburger-menu {
     /* background-color:  rgb(34, 37, 49); */
@@ -112,6 +123,8 @@ nav a{
 
     margin: 20px;
     border-radius: 1rem;
+
+    z-index: 100000;
 }
 .hamburger-menu.active {
   left: 0;
@@ -158,6 +171,9 @@ nav a{
 .hmb_link {
     outline: none;
     font-size: 36px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
     outline: 0 !important;
     color: var(--white);
@@ -206,15 +222,16 @@ nav a{
 
 
 /* MAIN START */
-main{
+/* main{
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 /* MAIN END */
 
 /* FOOTER START */
 footer{
+    clear: both;
     background-color: var(--teal);
     text-align: center;
     font-size: 18px;
@@ -223,7 +240,7 @@ footer{
     box-shadow: 0px 0px 15px  var(--ligth-teal);
 }
 /* FOOTER END */
-#animatedText {
+#animatedText1, #animatedText2 {
     font-family:  monospace;
 }
 .hover > #animatedText {

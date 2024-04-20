@@ -9,3 +9,43 @@ window.onscroll = function(){
     }
     indicator.style.width = position + "%";
 }
+// adding square
+
+window.addEventListener('scroll', function() {
+    var top = document.querySelector('#headline0');
+    var ontop1 = document.querySelector('#headline1');
+    var ontop2 = document.querySelector('#headline2');
+    var ontop3 = document.querySelector('#headline3');
+    var ontop4 = document.querySelector('#headline4');
+    var icon1 = document.querySelector('.list_icon1');
+    var icon2 = document.querySelector('.list_icon2');
+    var icon3 = document.querySelector('.list_icon3');
+
+    if (window.scrollY >= top.offsetTop) {
+        icon1.style.display = 'none';
+        icon2.style.display = 'none';
+        icon3.style.display = 'none';
+    }
+    if (window.scrollY >= ontop1.offsetTop) {
+        icon1.style.display = '';
+        icon2.style.display = 'none';
+        icon3.style.display = 'none';
+    }
+    if (window.scrollY >= ontop2.offsetTop) {
+        icon1.style.display = 'none';
+        icon2.style.display = '';
+        icon3.style.display = 'none';
+    }
+    if (window.scrollY >= ontop2.offsetTop) {
+        icon1.style.display = 'none';
+        icon3.style.display = 'none';
+        icon2.style.display = '';
+    }
+    if (window.scrollY >= ontop3.offsetTop) {
+        icon1.style.display = 'none';
+        icon2.style.display = 'none';
+        icon3.style.display = '';
+    }
+
+  });
+

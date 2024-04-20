@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+<body>
+
     <style>
-        :root{
-            --dark-blue: #020b13;
-            --white:#d7dee4;
-            --light-green: #84e808;
+        .Content_Block3_Bottom_Left, .Content_Block3_Bottom_Right {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
         }
-        body{
-            background-color: var(--dark-blue);
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
-        .hmb_link {
-            outline: none;
-            font-size: 36px;
-            text-transform: uppercase;
-            outline: 0 !important;
-            color: var(--white);
-            white-space: nowrap;
-            height: 50px;
-            position: relative;
-            padding: 0px 10px 0px 5px;
+    
+        select, input, button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
         }
-        .hmb_link:hover {
-            background: var(--white);
-            color: var(--dark-blue);
-            border-radius: 2%;
-            height: 50px;
+        /* input{
+            height: 500px;
+        } */
+    
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        .hmb_link:before {
-            content: '';
-            position: absolute;
-            top: -1px;
-            right: 0;
-            border-top: 15px solid var(--dark-blue);
-            border-left: 15px solid rgba(255, 0, 0, 0);
-            width: 0;
+    
+        button:hover {
+            background-color: #0052cc;
         }
-        .hover {
-            position: relative;
-            display: inline-block;
+
+        #plotkowy {
+            width: 100%;
+            table-layout: fixed;
         }
-        .hmb-comment{
-            text-align: left;
-            display: none;
-            transition: opacity 0.3s ease;
-            color: var(--light-green);
-            position: absolute;
-            font-size: 15px;
-            top: 50%;
-            right: -20px; /* Zmieniono na 100% */
-        }
-        #hmb-comment-text{
-            font-size: 7px;
-        }
-        .hover:hover .hmb-comment{
-            display: block;
-        }
-        #animatedText {
-            font-family: 'Space Mono', monospace;
-            padding: 0rem clamp(1rem, 2vw, 3rem);
+
+        #plotkowy td {
+            height: 30px;
+            width: 30px;
+            border: 1px solid #000;
+            text-align: center;
+            vertical-align: middle;
         }
     </style>
-</head>
-<body>
-    <div class="text">
-        <h1 id="animatedText" data-value="HYPERPLEXED">HYPERPLEXED</h1>
-        <h1 id="animatedText" data-value="ANIMATED">ANIMATED</h1>
-        <div class="hover"><a href="" class="hmb_link" id="animatedText" data-value="tesssst">tesssst</a><span class="hmb-comment" id="hmb-comment-text">Strona <br>001</span></div>
-    </div>
-    <script src="/Skrypty/animated-text.js"></script>
+
+
+
+<!-- <div class="Content_Block3_Bottom_Left">
+    <form id="tlumacz">
+        <select name="select">
+            <option>Opcja</option>
+            <option>Opcja</option>
+            <option>Opcja</option>
+        </select><br>
+        <input type="text" id="input">
+        <button onclick="">Zaszyfruj</button>
+    </form>
+</div>
+<div class="Content_Block3_Bottom_Right">
+    <form name="odtlumacz">
+        <input type="text" id="input">
+        <button onclick="">Zaszyfruj</button>
+    </form>
+</div> -->
+<table id="plotkowy">
+    <tr>
+        <td>K</td><td>-</td><td>-</td><td>-</td><td>T</td><td>-</td><td>-</td><td>-</td><td>A</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+        <td>-</td><td>R</td><td>-</td><td>P</td><td>-</td><td>O</td><td>-</td><td>R</td><td>-</td><td>F</td><td>-</td><td>A</td>
+    </tr>
+    <tr>
+        <td>-</td><td>-</td><td>Y</td><td>-</td><td>-</td><td>-</td><td>G</td><td>-</td><td>-</td><td>-</td><td>I</td><td>-</td>
+    </tr>
+</table>
+
+
+
+
+<!-- <h1>Prosty tłumacz</h1>
+
+<p>Wpisz tekst do przetłumaczenia:</p>
+
+<input type="text" id="myInput" value="">
+
+<button onclick="translateToOutput()">Tłumacz do wyjścia</button>
+
+<p>Przetłumaczony tekst:</p>
+
+<input type="text" id="myOutput" value="">
+
+<button onclick="translateToInput()">Tłumacz do wejścia</button>
+
+<script>
+function translateToOutput() {
+  var x = document.getElementById("myInput").value;
+  // Tutaj wprowadź logikę tłumaczenia, na przykład:
+  var translated = x.toUpperCase(); // Przykładowa "tłumaczenie" na wielkie litery
+  document.getElementById("myOutput").value = translated;
+}
+
+function translateToInput() {
+  var x = document.getElementById("myOutput").value;
+  // Tutaj wprowadź logikę tłumaczenia, na przykład:
+  var translated = x.toLowerCase(); // Przykładowa "tłumaczenie" na małe litery
+  document.getElementById("myInput").value = translated;
+}
+</script> -->
+
 </body>
 </html>
