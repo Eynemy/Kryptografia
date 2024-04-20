@@ -324,6 +324,7 @@ button:hover {
 }
 
 .console{
+    width: 80%;
     overflow: auto;
     background-color: rgb(0, 0, 0,0.5);
     /* background-color: aqua; */
@@ -350,9 +351,7 @@ button:hover {
 }
 
 /* dol */
-p{
-    /* font-size: 20px; */
-}
+
 .block2{
     margin-top: 5vh;
 }
@@ -360,7 +359,7 @@ p{
     float: left;
 }
 .block2-Left{
-    width: 60%;
+    width: 50%;
 }
 .block2-Left >h4{
     font-size: 32px;
