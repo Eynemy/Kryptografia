@@ -231,7 +231,7 @@ body[data-nav="true"] > #nav-toggle > .close {
 }
 main {
     /* background-image: url("/Obrazy/tlosekran.jpg"); */
-    /* background-image: url("/Obrazy/Tlo-film.mp4"); */
+    background-image: url("/Obrazy/Tlo-film.gif");
     background-color: black;
     background-position: center 0%;
     background-size: cover;

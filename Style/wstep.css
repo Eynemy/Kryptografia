@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --background1:#020b13;
+    --background12: #040f19;
+    --background1-alfa:rgb(2, 11, 19,0.5);
     --background2: #08243c;
+    --background22: #071e33;
+    --background2-alfa: rgb(8, 36, 60,0.2);
     --accent: #085c54;
     --ligth-teal: #10aca4;
     --light-green: #84e808;
@@ -19,8 +23,7 @@ body{
 
 /* HERO SECTION START */
 .hero_section{
-    background-image: url("/Obrazy/tloh.avif");
-    
+    background-image: url("/Obrazy/tlohero.jpeg");
     background-position:  0%;
     background-size: cover;
     padding-top: 10vh;
@@ -95,6 +98,9 @@ body{
     /* width: 500px; */
     width: 100%;
 }
+#PictureText_AES .text-line span{
+    background-color: var(--background1);
+}
 /* PICTURE, TEXT SECTION ENDING */
 
 
@@ -102,7 +108,6 @@ body{
 .TextPicture{
     clear: both;
     overflow: auto;
-    margin-top: 5VH;
     padding: 5vh 10% 5vh 10%;
     background-color: var(--background2);
     box-shadow: 0px 0px 100px  var(--background2);
@@ -124,8 +129,28 @@ body{
 }
 .TextPicture-Foto > img{
     border-radius: 20px;
-    /* width: 500px; */
     width: 100%;
+}
+#DES_TextPicture .text-line span{
+    background-color: var(--background12);
+}
+#DES_TextPicture{
+    background-color: var(--background12);
+}
+#TextPicture_Vigen{
+    background-color: var(--background22);
+}
+#TextPicture_Vigen .text-line span {
+    background-color: var(--background22);
+}
+
+#Vingener-div1{
+    padding-top: 2%;
+    padding-right: 2%;
+    width: 50%;
+}
+#Vingener-div2{
+    width: 50%;
 }
 /* TEXT PICTURE ENDING */
 
@@ -157,17 +182,24 @@ body{
     clear: both;
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
+    background-color: var(--background12);
 }
 .Content_Block3_Left,.Content_Block3_Right{
     float: left;
     width: 40%;
     margin-bottom: 5vh;
+    background-color: var(--background2-alfa);
+    border: var(--background1) 2px solid;
+    border-radius: 1rem;
+    padding: 2%;
 }
 .Content_Block3_Left h4,.Content_Block3_Right h4{
     font-size: 32px;
 }
 .Content_Block3_Left{
     margin-right: 10%;
+    position: relative;
+
 }
 .Content_Block3_Left h4, 
 .Content_Block3_Middle h4, 
@@ -178,7 +210,7 @@ body{
 .Content_Block3_Bottom{
     clear: both;
     overflow: auto;
-    background-color: rgb(0, 0, 0,0.1);
+    background-color: var(--background2-alfa);
     border-radius: 1rem;
     border: #085c54 1px solid;
     box-shadow: 0px 0px 15px  var(--ligth-teal);
@@ -237,6 +269,59 @@ button:hover {
 .convert-space{
     margin-top: 82px;
 }
+.Atbasz{
+    width: 200px;
+    position: absolute;
+    top: 2%;
+    left: 72%;
+}
+.etaps_playfair{
+    padding-left: 5%;
+}
+.etaps_playfair li{
+    list-style: decimal;
+    font-size: 20px;   
+}
+.etaps_playfair ul{
+    padding-left: 5%;
+}
+.etaps_playfair ul li{
+    list-style: circle;
+    font-size: 18px;
+    
+}
+#Content_Block3_v2{
+    padding: 5vh 0% 5vh 2%; 
+    background-color: var(--background2);
+}
+#Content_Block3_Left_v2{
+    margin-right: 3%;
+    background-color: var(--background1-alfa);
+}
+#Content_Block3_Right_v2{
+    background-color: var(--background1-alfa);
+}
+#Content_Block3_Left_v2,#Content_Block3_Right_v2{
+    width: 47%;
+}
+#table_playfair{
+    position: relative;
+    bottom: 90px;
+    left: 40%;
+    width: 100px;
+}
+#table_playfair td{
+    width: 40px;
+}
+
+#Vigenere_table td{
+    width: 18px;
+}
+#Vigenere_table th{
+    width: 18px;
+    color: var(--light-green);
+}
+
 /* 2 TEXT CONSOLE ENDING */
 
 
@@ -303,7 +388,9 @@ button:hover {
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
     /* padding: 5vh 0% 5vh 0%; */
-    background-color: var(--background2);
+    background-color: var(--background22);
+    box-shadow: 0px 0px 20px  var(--background22);
+
 }
 .block1,.block2{
     overflow: auto;
@@ -359,17 +446,59 @@ button:hover {
     float: left;
 }
 .block2-Left{
-    width: 50%;
+    width: 45%;
 }
 .block2-Left >h4{
     font-size: 32px;
 }
 .block2-Right{
-    width: 40%;
+    width: 55%;
+    padding-left: 2%;
+}
+.block22-img{
+    width: 90%;
+}
+.block2-Right h4{
+    font-size: 36px;
 }
 
 /* BLOCK4 ENDING */
 
+.G{
+    color: var(--light-green);
+    font-weight: bold;
+}
+.R{
+    color: rgb(255, 7, 7);
+    font-weight: bold;
+}
+#SV th{
+    /* height: 30px; */
+    width: 50px;
+    border: 1px solid var(--white);
+    text-align: center;
+    vertical-align: middle;
+}
+#SV{
+    width: 104%;
+}
+.Vingen1{
+    color: yellow;
+}
+.Vingen2{
+    color: red;
+}
+/* DES START */
+.DES_list{
+    padding-top: 2%;
+    padding-left: 5%;
+    font-size: 24px;
+}
+
+.DES_list li{
+    list-style: circle;
+}
+/* DES END */
 
 /* TEXT LINE */
 h1{
