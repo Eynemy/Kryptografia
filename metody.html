@@ -184,7 +184,7 @@
                         Każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie. 
                         
                         Na przykład, jeżeli zdefiniujemy przesunięcie na “4”, litera “a” zostanie w takim szyfrze zastąpiona literą “c” (ponieważ “a” jest pierwszą literą alfabetu a “c” trzecią). </p>
-                    <img src="Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;">
+                    <!-- <img src="Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;"> -->
                 </div>
             </div>
             <div class="block2">
@@ -218,8 +218,22 @@
                 </div>
                 <div class="block2-Right">
                     
-                    <h4>Psełdokod</h4>
-                    <img src="Obrazy/Psełdokod1.png" class="block22-img">
+                    <h4>Ujęcie matematyczne</h4>
+                    <p>Operację szyfrowania i deszyfrowania można wyrazić w ujęciu matematycznym. W tym celu wystarczy każdej literze alfabetu jednoznacznie przypisać jej numer według schematu A↔0, Ą↔1, B↔2, …, Ż↔31.</p>
+                    <br>
+                    <p>Szyfrowanie można wtedy zdefiniować za pomocą wzoru:</p>
+                    <img src="Obrazy/wzor1.svg" src="wzor_szyfr_cezara">
+                    <p>gdzie x jest numerem litery tekstu jawnego w alfabecie, <img src="Obrazy/Enx.svg" src="Enx" class="wzor"> - numerem litery szyfrogramu w alfabecie. </p>
+                    <br>
+                    <p>Podobnie deszyfrowanie tekstu można zapisać jako:</p>
+                    <img src="Obrazy/wzor2.svg" alt="wzór_na_deszyfracje_szyfru_cezara">
+                    <br>
+                    <p>gdzie x jest numerem litery szyfrogramu w alfabecie, <img src="Obrazy/Dny.svg" alt="Dny" class="wzor"> - numerem litery tekstu jawnego w alfabecie.</p>
+                    <ul>
+                        <li>jeśli przy wyznaczaniu <img src="Obrazy/Enx.svg" alt="Enx" class="wzor"> wartość wyrażenia x + n przekroczy 32 – 1, to należy ją zmniejszyć o 32.</li>
+                        <li>jeśli przy wyznaczaniu <img src="Obrazy/Dnx.svg" alt="Dnx" class="wzor"> wartość wyrażenia y - n będzie ujemna, to należy ją zwiększyć o 32.
+                        </li>
+                    </ul>
                
                 </div>
             </div>

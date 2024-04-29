@@ -464,11 +464,14 @@ button:hover {
     width: 55%;
     padding-left: 2%;
 }
-.block22-img{
-    width: 90%;
-}
+
 .block2-Right h4{
     font-size: 36px;
+}
+
+.wzor{
+    position: relative;
+    top: 6px;
 }
 
 /* BLOCK4 ENDING */
@@ -483,13 +486,13 @@ button:hover {
 }
 #SV th{
     /* height: 30px; */
-    width: 50px;
+    width: 90px;
     border: 1px solid var(--white);
     text-align: center;
     vertical-align: middle;
 }
 #SV{
-    width: 104%;
+    width: 100%;
 }
 .Vingen1{
     color: yellow;
