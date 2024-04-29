@@ -1,6 +1,0 @@
-Nazywam się Mateusz Zimny, mam 17 lat i jestem uczniem klasy III na kierunku “Technik Informatyk” w Zespole Szkół nr 1 w Nowym Tomyślu. Strona została wykonana na potrzeby XV edycji konkursu „Zobaczyć Matematykę” (2022/23) organizowanym przez Akademię Górniczo-Hutniczą im. Stanisława Staszica w Krakowie.
-
-źródła:
-https://www.flaticon.com
-https://unsplash.com
-wikiepedia.com

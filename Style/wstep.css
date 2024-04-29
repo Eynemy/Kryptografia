@@ -51,23 +51,29 @@ body{
 
 /* MINI HERO SECTION START */
 .mini_hero_section{
-    background-image: url("/Obrazy/hero2.jpg");
+    /* background-image: url("/Obrazy/hero2.jpg"); */
+    background-image: url("/Obrazy/background_hero.jpg");
     background-position:  0%;
     background-size: cover;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
     position: relative;
 }
 .overlay h1{
-    padding-top: 4.5vh;
+    padding-top: 5vh;
+
+    
 }
 .overlay{
     position: absolute;
     top: 0;
-    height: 227.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 227.5px;
     width: 100%;
-    padding-bottom: 10vh;
-    background-color: rgb(2, 11, 19,0.7);
+    padding-bottom: 10vh; */
+    background-color: rgb(2, 11, 19,0.5);
 }
 /* MINI HERO SECTION ENDING */
 
@@ -208,6 +214,7 @@ body{
 
 }
 .Content_Block3_Bottom{
+    width: 97.8%;
     clear: both;
     overflow: auto;
     background-color: var(--background2-alfa);
@@ -251,6 +258,8 @@ select{
     background-color: var(--white)
 }
 textarea {
+    padding: 2%;
+    color: var(--white);
     width: 100%;  /* Ustaw szerokość */
     height: 30vh; 
     resize: none;  /* Wyłącz możliwość zmiany rozmiaru */
@@ -270,7 +279,7 @@ button:hover {
     margin-top: 82px;
 }
 .Atbasz{
-    width: 200px;
+    width: 20%;
     position: absolute;
     top: 2%;
     left: 72%;
@@ -498,6 +507,74 @@ button:hover {
 .DES_list li{
     list-style: circle;
 }
+#float_button{
+    float: left;
+    width: 48%;
+}
+#float_button:first-child{
+    margin-right: 2%;
+}
+#button_float{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.cezar_input{
+    width: 50%;
+}
+
+.console_padding{
+    /* margin-left: 10%; */
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch .checkbox_pl {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+.checkbox_pl:checked + .slider {
+    background-color: var(--ligth-teal);
+}
+.checkbox_pl:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.info{
+    font-size: 26px;
+}
 /* DES END */
 
 /* TEXT LINE */
@@ -542,6 +619,9 @@ h3 {
     padding: 5px; 
     width: 50%;
     z-index: 0;
+}
+#key1{
+    margin-bottom: 6.5vh;
 }
 
 h4{

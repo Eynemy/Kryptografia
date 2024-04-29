@@ -138,18 +138,19 @@
                 <h2 style="padding-left: 2%;">Zaszyfruja dane!</h2>
                 <div class="Content_Block3_Bottom_Left">
                     <form id="tlumacz">
-                        <select name="select">
-                            <option>Szyfr Płotkowy</option>
-                            <option>Szyfr Kolumnowy</option>
+                        <select name="select" id="Selecting1" onchange="whitchinputtype1()">
+                            <option value="Plotkowy">Szyfr Płotkowy</option>
+                            <option value="Kolumnowy">Szyfr Kolumnowy</option>
                         </select><br>
-                        <textarea id="input" rows="4"></textarea>
-                        <button onclick="">Zaszyfruj</button>
+                        <textarea id="input_selecting1" rows="4"></textarea>
+                        <button type="button" onclick="whichoption1_enc()">Zaszyfruj</button>
                     </form>
                 </div>
                 <div class="Content_Block3_Bottom_Right">
-                    <form name="odtlumacz" class="convert-space">
-                        <textarea id="input" rows="4"></textarea>
-                        <button onclick="">Odszyfruj</button>
+                    <form name="odtlumacz">
+                        <input type="number" placeholder="klucz" id="key1">
+                        <textarea id="output_selecting1" rows="4"></textarea>
+                        <button type="button" onclick="whichoption1_dec()">Odszyfruj</button>
                     </form>
                 </div>
             </div>
@@ -192,14 +193,31 @@
                     
                     <div class="console">
                         <h2>Zaszyfruj dane!</h2>
+                        <div style="padding-top: 5%;">
+                            <span class="console_padding">Klucz: </span> <input type="number" class="cezar_input" id="cezar_key" min="0" max="26" value="1">
+                            <!-- <span>PL</span><input type="checkbox" style="width: 10px;" id="PL"> -->
+                            <span style="padding-left: 2%;padding-right: 1%;">PL</span>
+                                <label class="switch" style="position: relative;top: -1vh;">
+                                    <input type="checkbox" style="width: 10px;" id="PL" class="checkbox_pl">
+                                    <span class="slider round"></span>
+                                </label>
+                        </div>
+                        <DIV style="display: flex; align-items: center;">
+                           
+                        </DIV>
+                        
                         <form name="odtlumacz" class="convert2">
-                            <textarea id="input" rows="4"></textarea>
-                            <button onclick="">Zaszyfruj</button>
-                            <button onclick="">Odszyfruj</button>
+                            
+                            <textarea id="selecting2-inout" rows="4"></textarea>
                         </form>
+                        <div id="button_float">
+                            <button id="float_button" onclick="Cezar_enc()">Zaszyfruj</button>
+                            <button id="float_button" onclick="Cezar_dec()">Odszyfruj</button>
+                        </div>
                     </div>
                 </div>
                 <div class="block2-Right">
+                    
                     <h4>Psełdokod</h4>
                     <img src="Obrazy/Psełdokod1.png" class="block22-img">
                
@@ -259,18 +277,31 @@
                 <h2 style="padding-left: 2%;">Zaszyfruja dane!</h2>
                 <div class="Content_Block3_Bottom_Left">
                     <form id="tlumacz">
-                        <select name="select">
-                            <option>Szyfr Płotkowy</option>
-                            <option>Szyfr Kolumnowy</option>
+                        <select name="select" id="Selecting2" onchange="whitchinputtype2()">
+                            <option value="Atbasz">Atbasz</option>
+                            <option value="Playfair">Szyfr Playfair</option>
                         </select><br>
-                        <textarea id="input" rows="4"></textarea>
-                        <button onclick="">Zaszyfruj</button>
+                        <textarea id="input_selecting2" rows="4"></textarea>
                     </form>
+                    <!-- <button type="button" onclick="whichoption1()">Zaszyfruj</button> -->
+                    <button type="button" onclick="whichoption2_enc()">Zaszyfruj</button>
                 </div>
                 <div class="Content_Block3_Bottom_Right">
-                    <form name="odtlumacz" class="convert-space">
-                        <textarea id="input" rows="4"></textarea>
-                        <button onclick="">Odszyfruj</button>
+                    <!-- <div>
+                        <span>PL</span><input type="checkbox" style="width: 10px;" id="PL2" class="checkbox_pl">
+                    </div> -->
+                    <input type="text" placeholder="klucz" id="key2" style="display: none;">
+                    <div id="switch_div" >
+                        <span>PL</span>
+                        <label class="switch">
+                            <input type="checkbox" style="width: 10px;" id="PL2" class="checkbox_pl">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    
+                    <form name="odtlumacz" style="margin-top: 50px;" class="form_spacing">
+                        <textarea id="output_selecting2" rows="4"></textarea>
+                        <button type="button" onclick="whichoption2_dec()">Odszyfruj</button>
                     </form>
                 </div>
             </div>
@@ -282,7 +313,7 @@
                     Szyfr Vigenère’a to klasyczny algorytm szyfrujący należący do grupy polialfabetycznych szyfrów podstawieniowych. Szyfr ten używa słowa kluczowego do szyfrowania tekstu jawnego, a każda litera klucza odpowiada przesunięciu w alfabecie, podobnie jak w szyfrze Cezara.
                 </p><br>
                 <p>Tekst szyfrujemy na podstawie hasła. Szyfrowanie odbywa się w sposób następujący. Każdą literę tekstu jawnego szyfrujemy korzystając z alfabetu zaczynającego się od odpowiadającej litery w haśle.
-                    Szyfrowanie i deszyfrowanie odbywa się na podstawie tablicy Vigenere`a.</p><p style="color: red;">W przypadku, gdy hasło jest krótsze od szyfrowanego tekstu powtarzamy je wielokrotnie.</p>
+                    Szyfrowanie i deszyfrowanie odbywa się na podstawie tablicy Vigenere`a.</p><p style="font-weight: 700;">W przypadku, gdy hasło jest krótsze od szyfrowanego tekstu powtarzamy je wielokrotnie.</p>
                 <br>
                 <br><p>Przykład:</p>
                     <table class="szyfry_przestawne" id="SV">
@@ -294,7 +325,6 @@
                         </tr>
                         <tr>
                             <th>Szyfrogram</th><td>C</td><td>Q</td><td>W</td><td>U</td><td>K</td><td>G</td><td>F</td><td>P</td><td>F</td><td>W</td><td>A</td><td>Z</td>
-                            CQWUKGFPFWAZ
                         </tr>
                      
                     </table>
@@ -489,7 +519,7 @@
                     AES to symetryczny szyfr blokowy, który został przyjęty przez rząd Stanów Zjednoczonych jako standard szyfrowania w 2001 roku, zastępując starszy algorytm DES. AES jest oparty na algorytmie Rijndaela, którego autorami są belgijscy kryptografowie, Joan Daemen i Vincent Rijmen.
                     AES operuje na 128-bitowych blokach danych i używa kluczy o długości 128, 192 lub 256 bitów. Liczba rund szyfrowania w AES zależy od długości klucza: 10 rund dla klucza 128-bitowego, 12 rund dla 192-bitowego i 14 rund dla 256-bitowego.
                 </p><br>
-                <p>AES bazuje na zasadzie, zwanej siecią substytucji-permutacji. Wykazuje się dużą szybkością pracy zarówno w przypadku sprzętu komputerowego, jak i oprogramowania. W przeciwieństwie do swego poprzednika, algorytmu DES, AES nie używa Sieci Feistela. AES posiada określony rozmiar bloku – 128 bitów, natomiast rozmiar klucza wynosi 128, 192, lub 256 bitów. Funkcja substytucyjna ma bardzo oryginalną konstrukcję, która uodparnia ten algorytm na znane ataki</p>
+                <p>AES bazuje na zasadzie, zwanej siecią substytucji-permutacji. Wykazuje się dużą szybkością pracy zarówno w przypadku sprzętu komputerowego, jak i oprogramowania. W przeciwieństwie do swego poprzednika, algorytmu DES, AES nie używa Sieci Feistela. AES posiada określony rozmiar bloku – 128 bitów, natomiast rozmiar klucza wynosi 128, 192, lub 256 bitów. Funkcja substytucyjna ma bardzo oryginalną konstrukcję, która uodparnia ten algorytm na znane ataki.</p>
             </div>
         </div>
     </main>
@@ -498,6 +528,7 @@
     <script src="/Skrypty/hamburger-menu.js"></script>
     <script src="/Skrypty/animated-text.js"></script>
     <script src="/Skrypty/buttons.js"></script>
+    <script src="/Skrypty/encrypt.js"></script>
     <footer>Mateusz Zimny</footer>
 </body>
 </html>
