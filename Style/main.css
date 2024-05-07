@@ -6,7 +6,6 @@ body {
     background-color: black;
 }
 
-/* Ekrany */
 .screen{
     width: 380px;
     border: 3px solid rgb(16,156,184,0.8);
@@ -18,6 +17,7 @@ body {
     float: left;
     margin-left: 2%;
 }
+
 .screen-overlay{
     background: linear-gradient(
     rgb(16,156,184,0.15),
@@ -33,8 +33,8 @@ body {
     z-index: 2;
     left: 0px;
     top: 0px;
-    
 }
+
 .screen > .screen-img{
     background-image: url("/Obrazy/tlosekran.jpg");
     height: 100%;
@@ -47,8 +47,21 @@ body {
     opacity: 0.8;
     background-position: 0% 0%;
     filter: hue-rotate(61deg);
+   
+}
+#background_animation1{
     animation: scimg-animation 15s linear infinite;
 }
+#background_animation2{
+    animation: scimg-animation2 15s linear infinite;
+}
+#background_animation3{
+    animation: scimg-animation3 15s linear infinite;
+}
+#background_animation4{
+    animation: scimg-animation4 15s linear infinite;
+}
+
 .screen > .overlay-content {
     height: 86%;
     display: flex;
@@ -62,54 +75,48 @@ body {
     margin: 1rem;
     padding-bottom: 1rem;
     border: 1px solid rgb(16,156,184,0.5);
-
     filter: drop-shadow(0px 10px 20px #0087a5);
     border-radius: 0.6rem;
-    
 }
 
-/* ekrany tekst */
 .screen > .overlay-content > h1{
     margin-top: 0px;
 }
+
 .screen > .overlay-content > a >.lock{
-    /* width: 107.4px; */
     width: 90px;
     z-index: -1;
-    /* filter: drop-shadow(0px 0px 3px #109cb8); */
     filter: drop-shadow(0px 10px 20px #ffffff);
     transition-timing-function: ease;
     transition-duration: 400ms;
-
-    
-
 }
+
 .screen > .overlay-content > a >.lock:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    
+    transform: scale(1.1);
+    cursor: pointer;  
 }
+
 .screen > .overlay-content >a{
-    /* width: 107.4px; */
     width: 90px;
 }
+
 .line{
     width: 50px;
     height: 3px;
     background-color: #109cb8;
     filter: drop-shadow(0 0 10px #109cb8);
 }
+
 h1,h2 {
     font-family: 'Space Mono', monospace;
-    font-size: 50px;
+    font-size: 250%;
     color: white;
 }
+
 h1:hover,h2:hover{
     cursor: pointer;
 }
-/* koniec ekrany */
 
-/* Keyframes animacje */
 @keyframes overlay-animation {
     from{
         background-position: 0% 0%;
@@ -118,6 +125,7 @@ h1:hover,h2:hover{
         background-position: 0% -100%;
     }
 }
+
 @keyframes scimg-animation{
     0%{
         background-position: 0% 0%;
@@ -129,11 +137,103 @@ h1:hover,h2:hover{
         background-position: 0% 0%;
     }
 }
+@keyframes scimg-animation2{
+    0%{
+        background-position: 100% 100%;
+    }
+    50%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+@keyframes scimg-animation3{
+    0%{
+        background-position: 0% 0%;
+        background-size: 110%;
+    }
+    50%{
+        background-position: 100% 100%;
+        background-size: 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+        background-size: 110%;
+    }
+}
+@keyframes scimg-animation4{
+    0%{
+        background-position: 0% 0%;
+        background-size: 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+        background-size: 150%;
+    }
+    100%{
+        background-position: 0% 0%;
+        background-size: 100%;
+    }
+}
 
-/* NAV style */
+@keyframes body_background_animation{
+    0% {
+        background-position: 36% 42%;
+        background-size: 110%;
+      }
+      
+      20% {
+        background-position: 30% 35%;
+        background-size: 110%;
+      }
+      
+       /* -- View 2 -- */
+      20.0001% {
+        background-position: 60% 85%;
+        background-size: 170%;
+      }
+      
+      40% {
+        background-position: 49% 81%;
+        background-size: 170%;
+      }
+      
+      40.0001% { /* -- View 3 -- */
+        background-position: 80% 42%;
+        background-size: 150%;
+      }
+      
+      60% {
+        background-position: 84% 33%;
+        background-size: 150%;
+      }
+      
+      60.0001% { /* -- View 4 -- */
+        background-position: 0% 0%;
+        background-size: 150%;
+      }
+      
+      80% {
+        background-position: 15% 4%;
+        background-size: 150%;
+      }
+      
+      80.0001% { /* -- View 5 -- */
+        background-position: 80% 10%;
+        background-size: 150%;
+      }
+      
+      100% {
+        background-position: 72% 14%;
+        background-size: 150%;
+      }
+}
+
 body[data-nav="true"] > main {
     transform: translateY(-50%);
 }
+
 nav {
     height: 50vh;
     width: 100%;
@@ -143,6 +243,7 @@ nav {
     z-index: 1;
     overflow: hidden;
 }
+
 #nav-links {  
     display: flex;
     gap: clamp(1rem, 2vw, 2rem);
@@ -151,9 +252,11 @@ nav {
     transform: translateY(70%) scale(0.9);
     transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
 }
+
 body[data-nav="true"] > nav > #nav-links {
     transform: translateY(0%) scale(1);
 }
+
 #nav-toggle {
     height: 5rem;
     width: 5rem;
@@ -162,7 +265,6 @@ body[data-nav="true"] > nav > #nav-links {
     left: 50%;
     bottom: 3rem;
     transform: translateX(-50%);
-    /* background-color: #f00; */
     background-color: rgb(0, 191, 255);
     border: none;
     border-radius: 5rem;
@@ -172,24 +274,27 @@ body[data-nav="true"] > nav > #nav-links {
     transition: transform, background-color;
     transition-timing-function: ease;
     transition-duration: 400ms;
-
-    /* filter: drop-shadow(0px 0px 5px #a50000); */
     filter: drop-shadow(0px 0px 5px #0b4a6b);
 }
+
 #nav-toggle:hover {
     transform: translateX(-50%) scale(1.04);
 }
+
 #nav-toggle:active {
     transform: translateX(-50%) scale(0.96);  
 }
+
 body[data-nav="true"] > #nav-toggle {
     background-color: #0087a5;
 }
+
 body:not([data-nav="true"]) > #nav-toggle:hover > .open {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     filter: drop-shadow(0px 0px 5px #431818);
 }
+
 #nav-toggle > i {
     position: absolute;
     left: 50%;
@@ -202,36 +307,37 @@ body:not([data-nav="true"]) > #nav-toggle:hover > .open {
     transition-timing-function: ease;
     transition-duration: 400ms;
 }
+
 body[data-nav="true"] > #nav-toggle > .close {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
-/* SKRPT WCZYTYWANIE TEKSTU GLOWNY */
 #loading {
     position: absolute;
     top: 40vh;
     left: 35%;
     margin: -30px auto;
     text-align: center;
-    /* color: #411; stare */
     color: #113f44;
     font-family: Consolas, Courier, monospace;
-    /* font-size: 60px; */
     font-size: 100PX;
-    /* text-shadow: 0 0 15px #411;  stare*/
     text-shadow: 0 0 15px #113f44;
+
+    background-color: rgb(0, 0, 0,0.4);
+    padding: 50px;
+    border-radius: 90rem;
+
+    box-shadow: 0px 0px 200px #000000;
 }
 .glow {
-    /* color: #f00;
-    text-shadow: 0px 0px 10px #f00; */
     color: #00e5ff;
     text-shadow: 0px 0px 10px #1a2829;
 }
+
 main {
-    /* background-image: url("/Obrazy/tlosekran.jpg"); */
-    background-image: url("/Obrazy/Tlo-film.gif");
+    background-image: url("/Obrazy/background_1.gif");
     background-color: black;
     background-position: center 0%;
     background-size: cover;
@@ -240,15 +346,19 @@ main {
     position: relative;
     z-index: 2;
     transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
+    animation: body_background_animation 15s linear infinite;
+
+    box-shadow: -2px 0px 15px #0087a5;
 }
 
-
-
-  
-main > video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+#blur {
     height: 100%;
-  }
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.1vmax);
+}
+.zindex{
+    z-index: 0;
+}

@@ -85,3 +85,15 @@ setTimeout(inc, 500); // czas pojawianai sie liter(1000)
 setTimeout(write, 75); // czas pisania(75)
 $("span").removeClass("glow");
 }
+
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}

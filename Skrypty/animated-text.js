@@ -73,6 +73,46 @@ parents.forEach(parent => {
     }
 });
 
+var parents2 = document.querySelectorAll('#hover2');
+parents2.forEach(parent => {
+    parent.onmouseover = function() {
+        var element3 = document.querySelector('#animatedText3');
+        var element4 = document.querySelector('#animatedText4');
+        animateText({target: element3});
+        animateText({target: element4});
+    }
+});
+// nr 3
+var parents3 = document.querySelectorAll('#hover3');
+parents3.forEach(parent => {
+    parent.onmouseover = function() {
+        var element5 = document.querySelector('#animatedText5');
+        var element6 = document.querySelector('#animatedText6');
+        animateText({target: element5});
+        animateText({target: element6});
+    }
+});
+// nr 4
+var parents4 = document.querySelectorAll('#hover4');
+parents4.forEach(parent => {
+    parent.onmouseover = function() {
+        var element7 = document.querySelector('#animatedText7');
+        var element8 = document.querySelector('#animatedText8');
+        animateText({target: element7});
+        animateText({target: element8});
+    }
+});
+// nr 5
+var parents5 = document.querySelectorAll('#hover5');
+parents5.forEach(parent => {
+    parent.onmouseover = function() {
+        var element9 = document.querySelector('#animatedText9');
+        var element10 = document.querySelector('#animatedText10');
+        animateText({target: element9});
+        animateText({target: element10});
+    }
+});
+
 
 
 

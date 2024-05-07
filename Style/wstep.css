@@ -6,6 +6,7 @@
     --background2: #08243c;
     --background22: #071e33;
     --background2-alfa: rgb(8, 36, 60,0.2);
+    --accent-gray: #2c3444;
     --accent: #085c54;
     --ligth-teal: #10aca4;
     --light-green: #84e808;
@@ -13,6 +14,11 @@
 }
 img{
     border-radius: 5%;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+img:hover{
+    transform: scale(1.04);
 }
 body{
     font-family: "Lato", sans-serif;
@@ -21,9 +27,8 @@ body{
 }
 
 
-/* HERO SECTION START */
 .hero_section{
-    background-image: url("/Obrazy/tlohero.jpeg");
+    background-image: url("/Obrazy/tlohero.jpg");
     background-position:  0%;
     background-size: cover;
     padding-top: 10vh;
@@ -35,23 +40,17 @@ body{
     font-size: 20px;
 }
 .hero_section a{
-    /* background-color: yellow; */
     width: 20px;
-    /* margin-top: 10vh; */
     margin-left: 47.8%;
     overflow: auto;
-    /* margin-right: 50%; */
 }
 .hero_section .down img{
     margin-top: 5vh;
     width: 60px;
 }
-/* HERO SECTION ENDING */
 
 
-/* MINI HERO SECTION START */
 .mini_hero_section{
-    /* background-image: url("/Obrazy/hero2.jpg"); */
     background-image: url("/Obrazy/background_hero.jpg");
     background-position:  0%;
     background-size: cover;
@@ -61,8 +60,6 @@ body{
 }
 .overlay h1{
     padding-top: 5vh;
-
-    
 }
 .overlay{
     position: absolute;
@@ -70,15 +67,10 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    /* height: 227.5px;
-    width: 100%;
-    padding-bottom: 10vh; */
     background-color: rgb(2, 11, 19,0.5);
 }
-/* MINI HERO SECTION ENDING */
 
 
-/* PICTURE, TEXT SECTION START */
 .PictureText{
     clear: both;
     overflow: auto;
@@ -101,16 +93,13 @@ body{
 }
 .PictureText-Foto > img{
     border-radius: 20px;
-    /* width: 500px; */
     width: 100%;
 }
 #PictureText_AES .text-line span{
     background-color: var(--background1);
 }
-/* PICTURE, TEXT SECTION ENDING */
 
 
-/* TEXT PICTURE START */
 .TextPicture{
     clear: both;
     overflow: auto;
@@ -158,10 +147,8 @@ body{
 #Vingener-div2{
     width: 50%;
 }
-/* TEXT PICTURE ENDING */
 
 
-/* TEXT BLOCKS START */
 .Text-blocks{
     clear: both;
     overflow: auto;
@@ -180,9 +167,8 @@ body{
     height: 150px;
     vertical-align: top;
 }
-/* TEXT BLOCKS ENDING */
 
-/* 2 TEXT CONSOLE START */
+
 .Content_Block3{
     font-size: 26px;
     clear: both;
@@ -260,10 +246,11 @@ select{
 textarea {
     padding: 2%;
     color: var(--white);
-    width: 100%;  /* Ustaw szerokość */
+    width: 100%;
     height: 30vh; 
-    resize: none;  /* Wyłącz możliwość zmiany rozmiaru */
-    background-color: rgb(215, 222, 228,0.2);
+    resize: none;  
+    background-color: var(--accent-gray);
+    border-radius: 1%;
 }
 button {
     margin-top: 3vh;
@@ -331,10 +318,6 @@ button:hover {
     color: var(--light-green);
 }
 
-/* 2 TEXT CONSOLE ENDING */
-
-
-/* PICTURE - PICTURE START */
 
 .PicturePicture{
     clear: both;
@@ -388,15 +371,12 @@ button:hover {
     left: 25%;
     text-align: center;
 }
-/* PICTURE - PICTURE ENDING */
 
 
-/* BLOCK4 START */
 .blocks4{
     clear: both;
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
-    /* padding: 5vh 0% 5vh 0%; */
     background-color: var(--background22);
     box-shadow: 0px 0px 20px  var(--background22);
 
@@ -423,14 +403,12 @@ button:hover {
     width: 80%;
     overflow: auto;
     background-color: rgb(0, 0, 0,0.5);
-    /* background-color: aqua; */
     border-radius: 1rem;
 }
 .console textarea {
-    width: 80%;  /* Ustaw szerokość */
+    width: 80%;
     height: 40vh; 
-    resize: none;  /* Wyłącz możliwość zmiany rozmiaru */
-    background-color: rgb(215, 222, 228,0.2);
+    resize: none;
     margin-left: 10%;
 }
 .console button {
@@ -446,7 +424,7 @@ button:hover {
     margin-top: 1vh;
 }
 
-/* dol */
+
 
 .block2{
     margin-top: 5vh;
@@ -474,7 +452,7 @@ button:hover {
     top: 6px;
 }
 
-/* BLOCK4 ENDING */
+
 
 .G{
     color: var(--light-green);
@@ -485,7 +463,6 @@ button:hover {
     font-weight: bold;
 }
 #SV th{
-    /* height: 30px; */
     width: 90px;
     border: 1px solid var(--white);
     text-align: center;
@@ -500,7 +477,7 @@ button:hover {
 .Vingen2{
     color: red;
 }
-/* DES START */
+
 .DES_list{
     padding-top: 2%;
     padding-left: 5%;
@@ -526,7 +503,6 @@ button:hover {
 }
 
 .console_padding{
-    /* margin-left: 10%; */
     margin-left: 5%;
     padding-top: 5%;
 }
@@ -564,7 +540,7 @@ button:hover {
     transition: .4s;
 }
 .checkbox_pl:checked + .slider {
-    background-color: var(--ligth-teal);
+    background-color: var(--accent);
 }
 .checkbox_pl:checked + .slider:before {
     transform: translateX(26px);
@@ -578,9 +554,7 @@ button:hover {
 .info{
     font-size: 26px;
 }
-/* DES END */
 
-/* TEXT LINE */
 h1{
     font-family: Helvetica, sans-serif;
     font-size: 80px;
@@ -636,4 +610,21 @@ h4{
 }
 
 
-/* TEXT LINE ENDING */
+.hero_section {
+    position: relative;
+    z-index: 0;
+}
+
+#blur_hero {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1; 
+    background-color: rgb(4, 15, 25,0.7);
+}
+.zindex{
+    position: relative;
+    z-index: 1;
+}
