@@ -179,7 +179,6 @@
                     <img src="/Obrazy/szyfr_cezara.png">
                 </div>
                 <div class="block1-Right">
-                    <!-- <h2>Szyfr Cezara</h2> -->
                     <p>Jest to jedna z najprostszych technik szyfrowania, znana również jako szyfr przesuwający. 
 
                         Każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie. 
@@ -196,7 +195,6 @@
                         <h2>Zaszyfruj dane!</h2>
                         <div style="padding-top: 5%;">
                             <span class="console_padding">Klucz: </span> <input type="number" class="cezar_input" id="cezar_key" min="0" max="26" value="1">
-                            <!-- <span>PL</span><input type="checkbox" style="width: 10px;" id="PL"> -->
                             <span style="padding-left: 2%;padding-right: 1%;">PL</span>
                                 <label class="switch" style="position: relative;top: -1vh;">
                                     <input type="checkbox" style="width: 10px;" id="PL" class="checkbox_pl">
@@ -219,7 +217,6 @@
                 </div>
                 <div class="block2-Right">
                     
-                    <!-- <h4>Ujęcie matematyczne</h4> -->
                     <br>
                     <p>Operację szyfrowania i deszyfrowania można wyrazić w ujęciu matematycznym. W tym celu wystarczy każdej literze alfabetu jednoznacznie przypisać jej numer według schematu A↔0, Ą↔1, B↔2, …, Ż↔31.</p>
                     <br>
@@ -301,13 +298,9 @@
                         </select><br>
                         <textarea id="input_selecting2" rows="4"></textarea>
                     </form>
-                    <!-- <button type="button" onclick="whichoption1()">Zaszyfruj</button> -->
                     <button type="button" onclick="whichoption2_enc()">Zaszyfruj</button>
                 </div>
                 <div class="Content_Block3_Bottom_Right">
-                    <!-- <div>
-                        <span>PL</span><input type="checkbox" style="width: 10px;" id="PL2" class="checkbox_pl">
-                    </div> -->
                     <input type="text" placeholder="klucz" id="key2" style="display: none;">
                     <div id="switch_div" >
                         <span>PL</span>
@@ -547,6 +540,8 @@
     <script src="/Skrypty/animated-text.js"></script>
     <script src="/Skrypty/buttons.js"></script>
     <script src="/Skrypty/encrypt.js"></script>
+
+    <script src="/Skrypty/playfair.js"></script> 
     <footer>Mateusz Zimny</footer>
 </body>
 </html>

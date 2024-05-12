@@ -265,8 +265,7 @@ function deszyfrujSzyfrCezara_pl(input, key) {
     return result;
 }
 
-// var visible_checkbox = document.querySelector('#switch_div');
-// visible_checkbox.display = 'none';
+
 function whitchinputtype2(){
     const choice = document.getElementById("Selecting2").value;
     var visible_checkbox = document.querySelector('#switch_div');
@@ -370,200 +369,112 @@ function deszyfrAtbash(output, alfabet) {
     return result;
 }
 
-
-
 function Playfair_enc(){
     var key = document.getElementById('key2').value;
-    var preparedKey = prepareKey(key);
-    var input_to_correct = document.getElementById('input_selecting2').value;
-    var input = correctInput(input_to_correct);
-    var result = playfairCipher(input, preparedKey);
+    var input = document.getElementById('input_selecting2').value;
+    var result = playfairEncrypt(input, key);
     document.getElementById('output_selecting2').value = result;
 }
 function Playfair_dec(){
     var key = document.getElementById('key2').value;
-    var preparedKey = prepareKey(key);
-    var input_to_correct = document.getElementById('output_selecting2').value;
-    var input = correctInput(input_to_correct);
-    var result = playfairCipher(input, preparedKey);
+    var input = document.getElementById('output_selecting2').value;
+    var result = playfairDecrypt(input, key);
     document.getElementById('input_selecting2').value = result;
 }
 
-function prepareKey(key) {
-    var alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
-    var preparedKey = "";
-    for (var i = 0; i < key.length; i++) {
-        if (preparedKey.indexOf(key[i]) === -1) {
-            preparedKey += key[i];
-        }
-    }
-    for (var i = 0; i < alphabet.length; i++) {
-        if (preparedKey.indexOf(alphabet[i]) === -1) {
-            preparedKey += alphabet[i];
-        }
-    }
-    return preparedKey;
-}
-function generatePlayfairKey(preparedKey) {
-    var key = preparedKey;
-    var alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
-    var playfairKey = "";
+function generateKeySquare(key) {
+    const alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
+    const uniqueChars = [];
+    const keySquare = [];
+    
+    key = key.toUpperCase();
 
-    for (var i = 0; i < key.length; i++) {
-        if (playfairKey.indexOf(key[i]) === -1) {
-            playfairKey += key[i];
-        }
+    for (const char of key) {
+      if (!uniqueChars.includes(char)) {
+        uniqueChars.push(char);
+      }
     }
-    for (var i = 0; i < alphabet.length; i++) {
-        if (playfairKey.indexOf(alphabet[i]) === -1) {
-            playfairKey += alphabet[i];
-        }
+  
+    for (let i = 0; i < uniqueChars.length; i++) {
+      keySquare.push(uniqueChars[i]);
     }
-    return playfairKey;
-}
-function correctInput(input_to_correct) {
-    var input = input_to_correct;
-    var correctedInput = "";
-    for (var i = 0; i < input.length; i++) {
-        var char = input[i];
-        if (char >= 'a' && char <= 'z') {
-            // Convert lowercase letters to uppercase
-            correctedInput += char.toUpperCase();
-        } else if (char >= 'A' && char <= 'Z') {
-            correctedInput += char;
-        }
+  
+    for (let i = 0; i < alphabet.length; i++) {
+      if (!uniqueChars.includes(alphabet[i])) {
+        keySquare.push(alphabet[i]);
+      }
     }
-    // If the length of the input is odd, add an 'X' at the end
-    if (correctedInput.length % 2 !== 0) {
-        correctedInput += 'X';
-    }
-    return correctedInput;
-}
+  
+    return keySquare;
+  }
 
-
-function playfairCipher(input, preparedKey) {
-    var key = preparedKey;
-    var playfairKey = generatePlayfairKey(key);
-    var output = "";
-    console.log('klucz: '+key + ' , fair-klucz: ' + playfairKey + ' , input: ' + input + ' ,  output: ' + output);
-    for (var i = 0; i < input.length; i += 2) {
-        var firstLetter = playfairKey.indexOf(input[i]);
-        var secondLetter = playfairKey.indexOf(input[i + 1]);
-        var row1 = Math.floor(firstLetter / 5);
-        var col1 = firstLetter % 5;
-        var row2 = Math.floor(secondLetter / 5);
-        var col2 = secondLetter % 5;
-        if (row1 === row2) {
-            output += playfairKey[row1 * 5 + ((col1 + 1) % 5)];
-            console.log('aoutput-to:' + output);
-            output += playfairKey[row2 * 5 + ((col2 + 1) % 5)];
-        } else if (col1 === col2) {
-            output += playfairKey[((row1 + 1) % 5) * 5 + col1];
-            output += playfairKey[((row2 + 1) % 5) * 5 + col2];
-        } else {
-            output += playfairKey[row1 * 5 + col2];
-            output += playfairKey[row2 * 5 + col1];
-        }
+function playfairEncrypt(input, key) {
+    const keySquare = generateKeySquare(key);
+    input = input.toUpperCase();
+    const inputLength = input.length;
+    let encryptedinput = "";
+    let pos1, pos2, row1, row2, col1, col2;
+  
+    if (inputLength % 2 !== 0) {
+      input += "X";
     }
-
-    return output;
-}
-
-function Playfair_enc(){
-    var key = document.getElementById('key2').value;
-    var preparedKey = prepareKey(key);
-    var input_to_correct = document.getElementById('input_selecting2').value;
-    var input = correctInput(input_to_correct);
-    var result = playfairCipher(input, preparedKey);
-    document.getElementById('output_selecting2').value = result;
-}
-function Playfair_dec(){
-    var key = document.getElementById('key2').value;
-    var preparedKey = prepareKey(key);
-    var input_to_correct = document.getElementById('output_selecting2').value;
-    var input = correctInput(input_to_correct);
-    var result = playfairCipher(input, preparedKey);
-    document.getElementById('input_selecting2').value = result;
-}
-
-function prepareKey(key) {
-    var alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
-    var preparedKey = "";
-    for (var i = 0; i < key.length; i++) {
-        if (preparedKey.indexOf(key[i]) === -1) {
-            preparedKey += key[i];
-        }
+  
+    for (let i = 0; i < inputLength; i += 2) {
+      pos1 = keySquare.indexOf(input[i]);
+      pos2 = keySquare.indexOf(input[i + 1]);
+      row1 = Math.floor(pos1 / 5);
+      col1 = pos1 % 5;
+      row2 = Math.floor(pos2 / 5);
+      col2 = pos2 % 5;
+  
+      if (row1 === row2) {
+        encryptedinput += keySquare[row1 * 5 + ((col1 + 1) % 5)];
+        encryptedinput += keySquare[row1 * 5 + ((col2 + 1) % 5)];
+      }
+      else if (col1 === col2) {
+        encryptedinput += keySquare[((row1 + 1) % 5) * 5 + col1];
+        encryptedinput += keySquare[((row2 + 1) % 5) * 5 + col1];
+      }
+      else {
+        encryptedinput += keySquare[row1 * 5 + col2];
+        encryptedinput += keySquare[row2 * 5 + col1];
+      }
     }
-    for (var i = 0; i < alphabet.length; i++) {
-        if (preparedKey.indexOf(alphabet[i]) === -1) {
-            preparedKey += alphabet[i];
-        }
-    }
-    return preparedKey;
-}
-function generatePlayfairKey(preparedKey) {
-    var key = preparedKey;
-    var alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
-    var playfairKey = "";
+  
+    return encryptedinput;
+  }
 
-    for (var i = 0; i < key.length; i++) {
-        if (playfairKey.indexOf(key[i]) === -1) {
-            playfairKey += key[i];
-        }
+  function playfairDecrypt(text, keyword) {
+    const keySquare = generateKeySquare(keyword);
+    const textLength = text.length;
+    let decryptedText = "";
+    let pos1, pos2, row1, row2, col1, col2;
+  
+    if (textLength % 2 !== 0) {
+      text += "X";
     }
-    for (var i = 0; i < alphabet.length; i++) {
-        if (playfairKey.indexOf(alphabet[i]) === -1) {
-            playfairKey += alphabet[i];
-        }
+  
+    for (let i = 0; i < textLength; i += 2) {
+      pos1 = keySquare.indexOf(text[i]);
+      pos2 = keySquare.indexOf(text[i + 1]);
+      row1 = Math.floor(pos1 / 5);
+      col1 = pos1 % 5;
+      row2 = Math.floor(pos2 / 5);
+      col2 = pos2 % 5;
+  
+      if (row1 === row2) {
+        decryptedText += keySquare[row1 * 5 + ((col1 + 4) % 5)];
+        decryptedText += keySquare[row1 * 5 + ((col2 + 4) % 5)];
+      }
+      else if (col1 === col2) {
+        decryptedText += keySquare[((row1 + 4) % 5) * 5 + col1];
+        decryptedText += keySquare[((row2 + 4) % 5) * 5 + col1];
+      }
+      else {
+        decryptedText += keySquare[row1 * 5 + col2];
+        decryptedText += keySquare[row2 * 5 + col1];
+      }
     }
-    return playfairKey;
-}
-function correctInput(input_to_correct) {
-    var input = input_to_correct;
-    var correctedInput = "";
-    for (var i = 0; i < input.length; i++) {
-        var char = input[i];
-        if (char >= 'a' && char <= 'z') {
-            // Convert lowercase letters to uppercase
-            correctedInput += char.toUpperCase();
-        } else if (char >= 'A' && char <= 'Z') {
-            correctedInput += char;
-        }
-    }
-    // If the length of the input is odd, add an 'X' at the end
-    if (correctedInput.length % 2 !== 0) {
-        correctedInput += 'X';
-    }
-    return correctedInput;
-}
-
-
-function playfairCipher(input, preparedKey) {
-    var key = preparedKey;
-    var playfairKey = generatePlayfairKey(key);
-    var output = "";
-    console.log('klucz: '+key + ' , fair-klucz: ' + playfairKey + ' , input: ' + input + ' ,  output: ' + output);
-    for (var i = 0; i < input.length; i += 2) {
-        var firstLetter = playfairKey.indexOf(input[i]);
-        var secondLetter = playfairKey.indexOf(input[i + 1]);
-        var row1 = Math.floor(firstLetter / 5);
-        var col1 = firstLetter % 5;
-        var row2 = Math.floor(secondLetter / 5);
-        var col2 = secondLetter % 5;
-        if (row1 === row2) {
-            output += playfairKey[row1 * 5 + ((col1 + 1) % 5)];
-            console.log('aoutput-to:' + output);
-            output += playfairKey[row2 * 5 + ((col2 + 1) % 5)];
-        } else if (col1 === col2) {
-            output += playfairKey[((row1 + 1) % 5) * 5 + col1];
-            output += playfairKey[((row2 + 1) % 5) * 5 + col2];
-        } else {
-            output += playfairKey[row1 * 5 + col2];
-            output += playfairKey[row2 * 5 + col1];
-        }
-    }
-
-    return output;
-}
-
-
+  
+    return decryptedText;
+  }
