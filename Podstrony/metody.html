@@ -173,18 +173,19 @@
             </div>
         </div>
         <div class="blocks4">
+            <h3 class='text-line' id="text-line_cezar"><span>Szyfr Cezara</span></h3>
             <div class="block1">
                 <div class="block1-Left">
                     <img src="/Obrazy/szyfr_cezara.png">
                 </div>
                 <div class="block1-Right">
-                    <h2>Szyfr Cezara</h2>
+                    <!-- <h2>Szyfr Cezara</h2> -->
                     <p>Jest to jedna z najprostszych technik szyfrowania, znana również jako szyfr przesuwający. 
 
                         Każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie. 
                         
                         Na przykład, jeżeli zdefiniujemy przesunięcie na “4”, litera “a” zostanie w takim szyfrze zastąpiona literą “c” (ponieważ “a” jest pierwszą literą alfabetu a “c” trzecią). </p>
-                    <!-- <img src="/Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;"> -->
+                    <img src="/Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;">
                 </div>
             </div>
             <div class="block2">
@@ -218,18 +219,19 @@
                 </div>
                 <div class="block2-Right">
                     
-                    <h4>Ujęcie matematyczne</h4>
+                    <!-- <h4>Ujęcie matematyczne</h4> -->
+                    <br>
                     <p>Operację szyfrowania i deszyfrowania można wyrazić w ujęciu matematycznym. W tym celu wystarczy każdej literze alfabetu jednoznacznie przypisać jej numer według schematu A↔0, Ą↔1, B↔2, …, Ż↔31.</p>
                     <br>
                     <p>Szyfrowanie można wtedy zdefiniować za pomocą wzoru:</p>
-                    <img src="/Obrazy/wzor1.svg" src="/wzor_szyfr_cezara">
+                    <img src="/Obrazy/wzor1.svg" src="/wzor_szyfr_cezara" class="wzor2">
                     <p>gdzie x jest numerem litery tekstu jawnego w alfabecie, <img src="/Obrazy/Enx.svg" src="/Enx" class="wzor"> - numerem litery szyfrogramu w alfabecie. </p>
                     <br>
                     <p>Podobnie deszyfrowanie tekstu można zapisać jako:</p>
-                    <img src="/Obrazy/wzor2.svg" alt="wzór_na_deszyfracje_szyfru_cezara">
+                    <img src="/Obrazy/wzor2.svg" alt="wzór_na_deszyfracje_szyfru_cezara" class="wzor2">
                     <br>
                     <p>gdzie x jest numerem litery szyfrogramu w alfabecie, <img src="/Obrazy/Dny.svg" alt="Dny" class="wzor"> - numerem litery tekstu jawnego w alfabecie.</p>
-                    <ul>
+                    <ul class="p_ul">
                         <li>jeśli przy wyznaczaniu <img src="/Obrazy/Enx.svg" alt="Enx" class="wzor"> wartość wyrażenia x + n przekroczy 32 – 1, to należy ją zmniejszyć o 32.</li>
                         <li>jeśli przy wyznaczaniu <img src="/Obrazy/Dnx.svg" alt="Dnx" class="wzor"> wartość wyrażenia y - n będzie ujemna, to należy ją zwiększyć o 32.
                         </li>
@@ -274,7 +276,9 @@
                 <p>Etapy:</p>
                 <ol class="etaps_playfair">
                     <li><b>Tworzenie tabeli szyfrującej:</b> Najpierw tworzy się kwadratową tablicę 5x5, w której wpisuje się klucz (unikalne litery), a następnie uzupełnia pozostałe miejsca literami alfabetu, pomijając jedną literę (często ‘J’), aby zmieścić się w 25 polach.</li>
+                    <br>
                     <li><b>Przygotowanie tekstu jawnego:</b> Tekst jawny dzieli się na pary liter, zwane digrafami. Jeśli para zawiera dwie takie same litery lub jest nieparzysta, dodaje się literę ‘X’ lub inną literę wypełniającą.</li>
+                    <br>
                     <li>
                         <b>Szyfrowanie digrafów:</b>
                         <ul>
@@ -287,7 +291,7 @@
                 
                
             </div>
-            <div class="Content_Block3_Bottom">
+            <div class="Content_Block3_Bottom" id="zaszyfruj_atbasz">
                 <h2 style="padding-left: 2%;">Zaszyfruj dane!</h2>
                 <div class="Content_Block3_Bottom_Left">
                     <form id="tlumacz">
@@ -518,14 +522,14 @@
             </div>
             <div class="PictureText-Foto">
                 <img src="/Obrazy/DES-schemat_blokowy.png" alt="Schemat Blokowy Algorytmu DES">
-                <p style="text-align: center;">Schemat Blokowy Algorytmu DES</p>
+                <p style="padding-left: 20%;">Schemat Blokowy Algorytmu DES</p>
             </div>
         </div>
         <div class="PictureText" id="PictureText_AES">
             <h3 class='text-line'><span>AES (Advanced Encryption Standard)</span></h3>
             <div class="PictureText-Foto">
                 <img src="/Obrazy/wizualizacja_AES.png">
-                <p>Wizualizacja funkcji rundy AES</p>
+                <p style="padding-left: 15%;">Wizualizacja funkcji rundy AES</p>
             </div>
             <div class="PictureText-Text">
                 
