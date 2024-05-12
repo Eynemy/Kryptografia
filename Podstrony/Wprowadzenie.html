@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/Obrazy/icon.ico">
     <link rel="stylesheet" href="/Style/pattern.css">
-    <link rel="stylesheet" href="/Style/wstep.css">
+    <link rel="stylesheet" href="/Style/subpages.css">
+    <script defer src="/Skrypty/scroll_animation.js"></script>
     <title>Kryptografia</title>
 </head>
 <body>
@@ -41,52 +42,47 @@
                 </span>
             </div>
             <div class="hover" id="hover2">
-                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link" id="animatedText" data-value="SZYFROWANIE">SZYFROWANIE</a>
-                <span class="hmb-comment" id="hmb-comment-text">
-                    <b id="animatedText3" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText4" data-value="002">002</b> 
+                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link2 selected" id="animatedText2" data-value="WPROWADZENIE">WPROWADZENIE</a>
+                <span class="hmb-comment selected2" id="hmb-comment-text">
+                    <b id="animatedText_null" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText_null" data-value="002">002</b> 
                 </span>
             </div>
             <div class="hover" id="hover3">
-                <a href="/Podstrony/ataki.html" class="hmb_link" id="animatedText" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
+                <a href="/Podstrony/Metody_Szyfrowania.html" class="hmb_link" id="animatedText" data-value="SZYFROWANIE"> SZYFROWANIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText5" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText6" data-value="003">003</b> 
                 </span>
             </div>
             <div class="hover" id="hover4">
-                <a href="/Podstrony/zastosowanie.html" class="hmb_link" id="animatedText" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
+                <a href="/Podstrony/Metody_lamania_szyfru.html" class="hmb_link" id="animatedText" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText7" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText8" data-value="004">004</b> 
                 </span>
             </div>
             <div class="hover" id="hover5">
-                <a href="/Podstrony/informacje.html" class="hmb_link" id="animatedText" data-value="INFORMACJE">INFORMACJE</a>
+                <a href="/Podstrony/Zastosowanie.html" class="hmb_link" id="animatedText" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText9" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText10" data-value="005">005</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover6">
+                <a href="/Podstrony/Informacje.html" class="hmb_link" id="animatedText" data-value="INFORMACJE">INFORMACJE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText11" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText12" data-value="006">006</b> 
                 </span>
             </div>
         </div>
     </div>
     <main>
         <span id="headline0"></span>
-        <!-- <div class="hero_section">
-            <div id="blur_hero"></div>
-                <h1 id="headline1">Kryptografia</h1>
-                <p>z gr. κρυπτός oraz γράφω gráfo „pisać”</p>
-                <a href="#here" class="down">
-                    <img src="/Obrazy/down.png" alt="down_icon">
-                </a>
-                <br>
-                <span id="here"></span>
-            </div>
-           
-        </div> -->
         <div class="hero_section">
             <div id="blur_hero"></div>
-            <div class="zindex">
+            <div class="zindex hidden_efc1">
                 <h1 id="headline1">Kryptografia</h1>
                 <p>z gr. κρυπτός kryptos, „ukryty”,oraz γράφω gráfo „pisać”</p>
                 <a href="#here" class="down">
@@ -97,13 +93,13 @@
             </div>
         </div>
 
-        
+        <span id="definicja"></span><br>
         <div class="PictureText" id="headline2">
             
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/OIG4.jpeg" alt="obrazek">
             </div>
-            <div class="PictureText-Text">
+            <div class="PictureText-Text hidden_efc3">
                 <h2>Co to jest kryptografia?</h2><br>
                 <p>Kryptografia to dziedzina wiedzy, która zajmuje się przekazywaniem informacji w sposób zabezpieczony przed niepowołanym dostępem.
                      Jest to praktyka szyfrowania przesyłanych informacji, tak aby mogły być interpretowane tylko przez zamierzonego odbiorcę.
@@ -111,62 +107,62 @@
                 
             </div>
         </div>
-
+        <span id="terminologia"></span><br>
         <div class="Text-blocks" id="headline3">
-            <h3 class='text-line'><span>Terminologia</span></h3>
-            <div class="Text-blocks-Block">
+            <h3 class='text-line hidden_efc2'><span class="">Terminologia</span></h3>
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Szyfrowanie</h4>
                 <p>Proces przekształcania tekstu jawnego w tekst zaszyfrowany, zwanym szyfrogramem. </p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Deszyfrowanie</h4>
                 <p>Proces odwrotny do szyfrowania, polegający na przekształceniu tekstu zaszyfrowanego z powrotem na tekst jawny, możliwy do odczytania.  </p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Klucz</h4>
                 <p>Tajny parametr wykorzystywany w procesach szyfrowania i deszyfrowania. </p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Klucz publiczny</h4>
                 <p>Ogólnodostępny klucz używany do szyfrowania wiadomości. Może być wykorzystany przez każdego, kto chce wysłać zaszyfrowaną wiadomość do posiadacza klucza prywatnego. </p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Klucz prywatny</h4>
                 <p>Tajny klucz służący do deszyfrowania wiadomości zaszyfrowanych przy użyciu klucza publicznego. Tylko posiadacz klucza prywatnego ma prawo go używać. </p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Tekst jawny</h4>
                 <p>Oryginalna, niezaszyfrowana treść wiadomości.</p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Kryptogram</h4>
                 <p>Wiadomość zaszyfrowana, wynik zastosowania algorytmu kryptograficznego do tekstu jawnego przy użyciu klucza.</p>
             </div>
-            <div class="Text-blocks-Block">
+            <div class="Text-blocks-Block hidden_efc1">
                 <h4>Kryptosystem</h4>
                 <p>Kompleksowy system kryptograficzny, który obejmuje zarówno szyfrowanie, jak i deszyfrowanie. Składa się z algorytmów, kluczy, protokołów i procedur umożliwiających bezpieczne przesyłanie informacji między stronami.</p>
             </div>
         </div>
-
+        <span id="historia"></span><br>
         <div class="PicturePicture" id="headline4">
             <h3 class="text-line"><span>Historia</span></h3>
-            <div class="Picture-Left">
+            <div class="Picture-Left hidden_efc2">
                 <img src="/Obrazy/OS_czasu.png" alt="Oś czasu">
             </div>
             <div class="Picture-Right">
-                <div class="Picture-Right-1">
+                <div class="Picture-Right-1 hidden_efc2">
                     <img src="/Obrazy/Skytale.png" alt="Skytale" class="Picture-Right-1">
                     <p class="PPR1">Skytale</p>
                 </div>
-                <div class="Picture-Right-2">
+                <div class="Picture-Right-2 hidden_efc2" >
                     <img src="/Obrazy/szyfr_cezara.png" alt="Szyfr Cezara" class="Picture-Right-1">
                     <p>Szyfr Cezara</p>
                 </div>
-                <div class="Picture-Right-3">
+                <div class="Picture-Right-3 hidden_efc2">
                     <img src="/Obrazy/maszyna_z_wirnikiem.png" alt="Pierwsza maszyna kryptograficzna z wirnikiem" class="Picture-Right-1">
                     <p>Pierwsza maszyna kryptograficzna z wirnikiem</p>
                 </div>
-                <div class="Picture-Right-4">
+                <div class="Picture-Right-4 hidden_efc2">
                     <img src="/Obrazy/Enigma.png" alt="Enigma" class="Picture-Right-1">
                     <p>Maszyna Enigma</p>
                 </div>
@@ -179,6 +175,10 @@
        
     </main>
     
+    <button id="go-up-button" class="go-up-button">
+        <img src="/Obrazy/down.png" class="up_img">
+    </button>
+
     <script src="/Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>
     <script src="/Skrypty/animated-text.js"></script>

@@ -1,0 +1,99 @@
+:root {
+    --card-color: rgb(25, 25, 25);
+}
+  
+.grid {
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0px;  
+}
+  
+#cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    padding: 1em 0em;
+    place-self: center;
+    position: relative;
+    width: calc(100% - 2em);
+    z-index: 2;
+}
+  
+.card {
+    background-color: var(--card-color);
+    border-radius: 0.75em;
+    cursor: pointer;
+    height: 240px;
+    position: relative;
+}
+  
+.card:hover:before {
+    opacity: 1;
+}
+  
+.card:before {
+    background: linear-gradient(
+      45deg,
+      transparent 5%,
+      #085c54 50%,
+      transparent 99%
+    );
+    border-radius: inherit;
+    content: "";
+    inset: 0px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 400ms;
+    z-index: 0;
+}
+  
+.card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    inset: 1px;
+    padding: 1em;
+    position: absolute;
+}
+
+
+.card:hover > .card-content > .card-name{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.card-name{
+    font-family: Helvetica, sans-serif;
+    font-size: 46px;
+    color: #d7dee4;
+}
+#info_h3{
+    margin-bottom: 0%;
+}
+.Text-blocks{
+    padding-bottom: 10%;
+    margin-bottom: 2%;
+}
+
+.v3, .v2{
+    margin-bottom: 0px;
+}
+
+.v3{
+    background-color: #020b13;
+}
+.v3 .text-line > span{
+    background-color: #020b13;
+}
+.zrodla .text-line > span{
+    background-color: #020b13;
+}
+.v2{
+    background-color:#040f19 ;
+}
+.v2 .text-line > span{
+    background-color: #040f19;
+}

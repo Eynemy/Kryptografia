@@ -1,8 +1,7 @@
-// curtain-menu animacja
+
 const toggleNav = () => {
     document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
     }
-// animacja tekstu szyfracja
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -32,15 +31,12 @@ const animateText = event => {
         iteration += 1 / 3;
     }, 30);
 }
-// przypisanie animacji 
 setInterval(() => animateText({ target: document.querySelector(".name1") }), 8000);
 
 setInterval(() => animateText({ target: document.querySelector(".name2") }), 10000);
 setInterval(() => animateText({ target: document.querySelector(".name3") }), 12000);
 setInterval(() => animateText({ target: document.querySelector(".name4") }), 14000);
-// set intervaal co ile sie uruchamia ( w milisekundach )
 
-// 
 
 alphabet = new Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
 letter_count = 0;
@@ -72,7 +68,7 @@ $("span:eq("+letter_count+")").addClass("glow");
 letter_count++;
 if (letter_count >= word.length) {
     finished = true;
-    setTimeout(reset, 15000);  //czas do resetu
+    setTimeout(reset, 15000);  
 } else {
     setTimeout(inc, 1000);
 }
@@ -81,8 +77,8 @@ if (letter_count >= word.length) {
 function reset() {
 letter_count = 0;
 finished = false;
-setTimeout(inc, 500); // czas pojawianai sie liter(1000)
-setTimeout(write, 75); // czas pisania(75)
+setTimeout(inc, 500); 
+setTimeout(write, 75); 
 $("span").removeClass("glow");
 }
 

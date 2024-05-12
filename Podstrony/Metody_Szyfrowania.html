@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/Obrazy/icon.ico">
     <link rel="stylesheet" href="/Style/pattern.css">
-    <link rel="stylesheet" href="/Style/wstep.css">
+    <link rel="stylesheet" href="/Style/subpages.css">
+    <script defer src="/Skrypty/scroll_animation.js"></script>
     <title>Kryptografia</title>
 </head>
 <body>
@@ -34,24 +35,45 @@
         </div>
         <div class="hamburger-menu">
             <div class="hover">
-                <a href="index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <a href="/index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText1" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText2" data-value="001">001</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover2">
+                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link" id="animatedText" data-value="WPROWADZENIE">WPROWADZENIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText3" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText4" data-value="001">001</b> 
+                    <b id="animatedText4" data-value="002">002</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover3">
+                <a href="/Podstrony/Metody_Szyfrowania.html" class="hmb_link2 selected" id="animatedText2" data-value="SZYFROWANIE"> SZYFROWANIE</a>
+                <span class="hmb-comment selected2" id="hmb-comment-text">
+                    <b id="animatedText_null" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText_null" data-value="003">003</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover4">
+                <a href="/Podstrony/Metody_lamania_szyfru.html" class="hmb_link" id="animatedText" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
                 <span class="hmb-comment" id="hmb-comment-text">
-                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText2" data-value="001">001</b> 
+                    <b id="animatedText7" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText8" data-value="004">004</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover5">
+                <a href="/Podstrony/Zastosowanie.html" class="hmb_link" id="animatedText" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText9" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText10" data-value="005">005</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover6">
+                <a href="/Podstrony/Informacje.html" class="hmb_link" id="animatedText" data-value="INFORMACJE">INFORMACJE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText11" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText12" data-value="006">006</b> 
                 </span>
             </div>
         </div>
@@ -60,15 +82,15 @@
         <span id="headline0"></span>
         <div class="mini_hero_section">
             <div class="overlay">
-                <h1>Metody szyfrowania</h1>
+                <h1 class="hidden_efc1">Metody szyfrowania</h1>
             </div>
         </div>
         <div class="PictureText" id="headline1">
             
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/szyfry_przestawieniowe.jpeg">
             </div>
-            <div class="PictureText-Text">
+            <div class="PictureText-Text hidden_efc3">
                 <h2>Szyfry przestawieniowe</h2><br>
                 <p>
                     Szyfry przestawieniowe to jedna z klasycznych metod szyfrowania. Charakteryzują się tym, że w zaszyfrowanym tekście
@@ -82,14 +104,14 @@
             </div>
         </div>
         <div class="Content_Block3">
-            <div class="Content_Block3_Left">
-                <h4>Szyfr płotkowy</h4>
-                <p>Szyfr płotkowy to forma szyfru przestawieniowego,  tekst jawny jest zapisywany w dół i po przekątnej na kolejnych rzędach wyimaginowanego płotu, a następnie porusza się w górę, gdy dotrzemy do dołu. Wiadomość jest następnie odczytywana w kolejnymi wierszami od góry.</p>
-                <br><p>Na przykład:
+            <div class="Content_Block3_Left hidden_efc2">
+                <h4 class="hidden_efc4">Szyfr płotkowy</h4>
+                <p class="hidden_efc1">Szyfr płotkowy to forma szyfru przestawieniowego,  tekst jawny jest zapisywany w dół i po przekątnej na kolejnych rzędach wyimaginowanego płotu, a następnie porusza się w górę, gdy dotrzemy do dołu. Wiadomość jest następnie odczytywana w kolejnymi wierszami od góry.</p>
+                <br><p class="hidden_efc1">Na przykład:
                     <br>Tekst jawny: "KRYPTOGRAFIA"
                     <br>Klucz: "3" (liczba wierszy)
                 </p>
-                <table class="szyfry_przestawne">
+                <table class="szyfry_przestawne hidden_efc1">
                     <tr>
                         <td>K</td><td>-</td><td>-</td><td>-</td><td>T</td><td>-</td><td>-</td><td>-</td><td>A</td><td>-</td><td>-</td><td>-</td>
                     </tr>
@@ -100,21 +122,21 @@
                         <td>-</td><td>-</td><td>Y</td><td>-</td><td>-</td><td>-</td><td>G</td><td>-</td><td>-</td><td>-</td><td>I</td><td>-</td>
                     </tr>
                 </table>
-                <p>Szyfrogram: "KTARPORFAYGI"</p>
+                <p class="hidden_efc1">Szyfrogram: "KTARPORFAYGI"</p>
             </div>
-            <div class="Content_Block3_Right">
-                <h4>Szyfr kolumnowy</h4>
-                <p>
+            <div class="Content_Block3_Right hidden_efc2">
+                <h4 class="hidden_efc3">Szyfr kolumnowy</h4>
+                <p class="hidden_efc1">
                     W transpozycji kolumnowej, wiadomość jest zapisywana w rzędach o stałej długości,
                      a następnie odczytywana ponownie kolumna po kolumnie, a kolumny są wybierane w pewnym przetasowanym porządku.
                       Zarówno szerokość rzędów, jak i permutacja kolumn są zwykle definiowane przez słowo kluczowe.
                        Na przykład, słowo kluczowe ZEBRA ma długość 5 (więc rzędy mają długość 6), a permutacja jest definiowana przez
                         porządek alfabetyczny liter w słowie kluczowym. W tym przypadku, porządek byłby<br> “6 3 2 4 1”.
                 </p><br>
-                <p>Na przykład:<br>
+                <p class="hidden_efc1">Na przykład:<br>
                     Tekst jawny: "KRYPTOGRAFIA"
                     <br>Klucz: "KOT" (3 kolumny, numerowanie kolumn 1 2 3)
-                    <table class="szyfry_przestawne">
+                    <table class="szyfry_przestawne hidden_efc1">
                         <tr>
                             <td>1</td><td>2</td><td>3</td>
                         </tr>
@@ -131,10 +153,10 @@
                             <td>F</td><td>I</td><td>A</td>
                         </tr>
                     </table>
-                    <p>Szyfrogram: KPGFRTRIYOAA</p>
+                    <p class="hidden_efc1">Szyfrogram: KPGFRTRIYOAA</p>
                 </p>
             </div>
-            <div class="Content_Block3_Bottom">
+            <div class="Content_Block3_Bottom hidden_efc2">
                 <h2 style="padding-left: 2%;">Zaszyfruj dane!</h2>
                 <div class="Content_Block3_Bottom_Left">
                     <form id="tlumacz">
@@ -159,8 +181,8 @@
         <div class="TextPicture" id="headline2">
             
             <div class="PictureText-Text">
-                <h2>Szyfry podstawieniowe</h2><br>
-                <p>
+                <h2 class="hidden_efc4">Szyfry podstawieniowe</h2><br>
+                <p class="hidden_efc1">
                     Szyfrowanie podstawieniowe to technika kryptograficzna, w której jednostki tekstu jawnego (niezaszyfrowanego)
                     są zastępowane szyfrogramem (zaszyfrowanym tekstem) w określony sposób za pomocą klucza. “Jednostkami” mogą być pojedyncze
                     litery, pary liter, trójki liter, mieszanki powyższych i tak dalej. Odbiorca odszyfrowuje tekst, wykonując odwrotny proces
@@ -168,28 +190,28 @@
                     już używane do zapewnienia bezpieczeństwa komunikacji.
                 </p>
             </div>
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/szyfry_podstawne.jpeg">
             </div>
         </div>
         <div class="blocks4">
-            <h3 class='text-line' id="text-line_cezar"><span>Szyfr Cezara</span></h3>
+            <h3 class='text-line hidden_efc2' id="text-line_cezar"><span>Szyfr Cezara</span></h3>
             <div class="block1">
-                <div class="block1-Left">
+                <div class="block1-Left hidden_efc2">
                     <img src="/Obrazy/szyfr_cezara.png">
                 </div>
                 <div class="block1-Right">
-                    <p>Jest to jedna z najprostszych technik szyfrowania, znana również jako szyfr przesuwający. 
+                    <p class="hidden_efc3">Jest to jedna z najprostszych technik szyfrowania, znana również jako szyfr przesuwający. 
 
                         Każda litera tekstu jawnego (niezaszyfrowanego) zastępowana jest inną, oddaloną od niej o stałą liczbę pozycji w alfabecie. 
                         
                         Na przykład, jeżeli zdefiniujemy przesunięcie na “4”, litera “a” zostanie w takim szyfrze zastąpiona literą “c” (ponieważ “a” jest pierwszą literą alfabetu a “c” trzecią). </p>
-                    <img src="/Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;">
+                    <img src="/Obrazy/Szyfr-Cezara.png" alt="szyfr_cezara" width="600px" style="padding-top: 5%;" class="hidden_efc1">
                 </div>
             </div>
             <div class="block2">
                 
-                <div class="block2-Left">
+                <div class="block2-Left hidden_efc4">
                     
                     <div class="console">
                         <h2>Zaszyfruj dane!</h2>
@@ -215,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block2-Right">
+                <div class="block2-Right hidden_efc3">
                     
                     <br>
                     <p>Operację szyfrowania i deszyfrowania można wyrazić w ujęciu matematycznym. W tym celu wystarczy każdej literze alfabetu jednoznacznie przypisać jej numer według schematu A↔0, Ą↔1, B↔2, …, Ż↔31.</p>
@@ -237,15 +259,15 @@
                 </div>
             </div>
         </div>
-        <div class="Content_Block3" id="Content_Block3_v2">
-            <div class="Content_Block3_Left" id="Content_Block3_Left_v2">
-                <h4>Atbasz</h4>
-                <img src="/Obrazy/Atbasz.png" class="Atbasz">
+        <div class="Content_Block3 " id="Content_Block3_v2">
+            <div class="Content_Block3_Left hidden_efc4" id="Content_Block3_Left_v2">
+                <h4 class="hidden_efc2">Atbasz</h4>
+                <img src="/Obrazy/Atbasz.png" class="Atbasz hidden_efc2">
                 <p>Prosty monoalfabetyczny szyfr podstawieniowy<br> pochodzenia hebrajskiego, którego działanie polega <br>na zamianie litery leżącej w odległości X od początku <br>alfabetu na literę leżącą w odległości X od jego końca. Prawdopodobnie został on opracowany około roku 500 p.n.e.</p>
-                <br><p>
+                <br><p class="hidden_efc2">
                     Aby ułatwić sobie ręczne operacje na tym szyfrze wystarczy użyć tabeli.
                 </p>
-                <table class="szyfry_przestawne">
+                <table class="szyfry_przestawne hidden_efc2">
                     <tr>
                         <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td>
                     </tr>
@@ -253,9 +275,9 @@
                         <td>Z</td><td>Y</td><td>X</td><td>W</td><td>V</td><td>U</td><td>T</td><td>S</td><td>R</td><td>Q</td><td>P</td><td>O</td><td>N</td>
                     </tr>
                 </table>
-                <p>Na przykład: </p><br>
-                <p>Tekst jawny: "SZYFRY"</p>
-                <table class="szyfry_przestawne">
+                <p class="hidden_efc2">Na przykład: </p><br>
+                <p class="hidden_efc2">Tekst jawny: "SZYFRY"</p>
+                <table class="szyfry_przestawne hidden_efc2">
                     <tr>
                         <td style="background-color: red;">A</td><td style="background-color: red;">B</td><td>C</td><td>D</td><td>E</td><td style="background-color: green;">F</td><td>G</td><td style="background-color: red;">H</td><td style="background-color: red;">I</td><td>J</td><td>K</td><td>L</td><td>M</td>
                     </tr>
@@ -263,15 +285,15 @@
                         <td style="background-color: green;">Z</td><td style="background-color: green;">Y</td><td>X</td><td>W</td><td>V</td><td style="background-color: red;">U</td><td>T</td><td style="background-color: green;">S</td><td style="background-color: green;">R</td><td>Q</td><td>P</td><td>O</td><td>N</td>
                     </tr>
                 </table>
-                <p>Szyfrogram: "HABUIB"</p>
+                <p class="hidden_efc2">Szyfrogram: "HABUIB"</p>
             </div>
-            <div class="Content_Block3_Right" id="Content_Block3_Right_v2">
-                <h4>Szyfr Playfair</h4>
-                <p>
+            <div class="Content_Block3_Right hidden_efc3" id="Content_Block3_Right_v2">
+                <h4 class="hidden_efc2">Szyfr Playfair</h4>
+                <p class="hidden_efc2">
                     Metoda szyfrowania Playfair, znana również jako szyfr Playfair, to poligramowy szyfr podstawieniowy, który zastępuje pary liter tekstu jawnego inną parą liter za pomocą specjalnej tabeli szyfrującej.
                 </p><br>
-                <p>Etapy:</p>
-                <ol class="etaps_playfair">
+                <p class="hidden_efc2">Etapy:</p>
+                <ol class="etaps_playfair hidden_efc2">
                     <li><b>Tworzenie tabeli szyfrującej:</b> Najpierw tworzy się kwadratową tablicę 5x5, w której wpisuje się klucz (unikalne litery), a następnie uzupełnia pozostałe miejsca literami alfabetu, pomijając jedną literę (często ‘J’), aby zmieścić się w 25 polach.</li>
                     <br>
                     <li><b>Przygotowanie tekstu jawnego:</b> Tekst jawny dzieli się na pary liter, zwane digrafami. Jeśli para zawiera dwie takie same litery lub jest nieparzysta, dodaje się literę ‘X’ lub inną literę wypełniającą.</li>
@@ -286,9 +308,8 @@
                     </li>
                 </ol>
                 
-               
             </div>
-            <div class="Content_Block3_Bottom" id="zaszyfruj_atbasz">
+            <div class="Content_Block3_Bottom hidden_efc2" id="zaszyfruj_atbasz">
                 <h2 style="padding-left: 2%;">Zaszyfruj dane!</h2>
                 <div class="Content_Block3_Bottom_Left">
                     <form id="tlumacz">
@@ -318,16 +339,16 @@
             </div>
         </div>
         <div class="TextPicture" id="TextPicture_Vigen">
-            <h3 class='text-line'><span>Szyfr Vigenère’a</span></h3>
+            <h3 class='text-line hidden_efc2'><span>Szyfr Vigenère’a</span></h3>
             <div class="PictureText-Text" id="Vingener-div1">
-                <p>
+                <p class="hidden_efc4">
                     Szyfr Vigenère’a to klasyczny algorytm szyfrujący należący do grupy polialfabetycznych szyfrów podstawieniowych. Szyfr ten używa słowa kluczowego do szyfrowania tekstu jawnego, a każda litera klucza odpowiada przesunięciu w alfabecie, podobnie jak w szyfrze Cezara.
                 </p><br>
-                <p>Tekst szyfrujemy na podstawie hasła. Szyfrowanie odbywa się w sposób następujący. Każdą literę tekstu jawnego szyfrujemy korzystając z alfabetu zaczynającego się od odpowiadającej litery w haśle.
-                    Szyfrowanie i deszyfrowanie odbywa się na podstawie tablicy Vigenere`a.</p><p style="font-weight: 700;">W przypadku, gdy hasło jest krótsze od szyfrowanego tekstu powtarzamy je wielokrotnie.</p>
+                <p class="hidden_efc4">Tekst szyfrujemy na podstawie hasła. Szyfrowanie odbywa się w sposób następujący. Każdą literę tekstu jawnego szyfrujemy korzystając z alfabetu zaczynającego się od odpowiadającej litery w haśle.
+                    Szyfrowanie i deszyfrowanie odbywa się na podstawie tablicy Vigenere`a.</p><p style="font-weight: 700;" class="hidden_efc4">W przypadku, gdy hasło jest krótsze od szyfrowanego tekstu powtarzamy je wielokrotnie.</p>
                 <br>
-                <br><p>Przykład:</p>
-                    <table class="szyfry_przestawne" id="SV">
+                <br><p class="hidden_efc4">Przykład:</p>
+                    <table class="szyfry_przestawne hidden_efc4" id="SV">
                         <tr>
                             <th>Tekst jawny</th><td>K</td><td>R</td><td>Y</td><td>P</td><td>T</td><td>O</td><td>G</td><td>R</td><td>A</td><td>F</td><td>I</td><td>A</td>
                         </tr>
@@ -340,7 +361,7 @@
                      
                     </table>
             </div>
-            <div class="PictureText-Foto" id="Vingener-div2">
+            <div class="PictureText-Foto hidden_efc2" id="Vingener-div2">
                 <table class="szyfry_przestawne" id="Vigenere_table">
                     <tr>
                         <th></th>
@@ -481,10 +502,10 @@
         </div>
         <div class="PictureText" id="headline3">
             
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/szyfry_synchroniczne.jpeg">
             </div>
-            <div class="PictureText-Text">
+            <div class="PictureText-Text hidden_efc3">
                 <h2>Szyfry synchroniczne</h2><br>
                 <p>
                     Kryptografia symetryczna, znana również jako kryptografia z kluczem tajnym, wykorzystuje pojedynczy klucz zarówno do
@@ -494,54 +515,56 @@
             </div>
         </div>
         <div class="TextPicture" id="DES_TextPicture">
-            <h3 class='text-line'><span>DES (Data Encryption Standard)</span></h3>
+            <h3 class='text-line hidden_efc2'><span>DES (Data Encryption Standard)</span></h3>
             <div class="PictureText-Text">
-                <p>DES to symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie
+                <p class="hidden_efc1">DES to symetryczny szyfr blokowy zaprojektowany w 1975 roku przez IBM na zlecenie
                     ówczesnego Narodowego Biura Standardów USA. Od 1976 do 2001 roku stanowił standard federalny USA,
                     a od roku 1981 standard ANSI dla sektora prywatnego. Szyfr DES operuje na 64-bitowych blokach danych,
                     używając 56-bitowego klucza (z dodatkowymi 8 bitami parzystości, które nie są wykorzystywane w procesie szyfrowania).
                     Algorytm ten jest znany z tego, że był jednym z pierwszych nowoczesnych i wydajnych szyfrów przeznaczonym do implementacji
                     programowych i sprzętowych na szeroką skalę.</p>
                 <br>
-                <p>
+                <p class="hidden_efc2">
                     W algorytmie DES do szyfrowania i deszyfrowania danych wykorzystywanych jest 56 bitów klucza. Klucz jest zapisywany w postaci 64-bitowego ciągu, w którym co 8 bit jest bitem kontrolnym i może służyć do kontroli parzystości. W procesie szyfrowania dane wejściowe (tekst jawny) dzielone są na bloki 64-bitowe. Następnie dla każdego bloku wykonywane są następujące operacje:
                 </p>
-                <ul class="DES_list">
+                <ul class="DES_list hidden_efc2">
                     <li>Permutacja początkowa bloku przestawiająca bity w pewien z góry określony sposób.</li>
                     <li>Podzielenie bloku wejściowego danych na dwie 32-bitowe części: lewą oraz prawą.</li>
                     <li>Wybranie 56 bitów z 64-bitowego sekretnego klucza (Permutacja PC-1), a następnie podzielenie tych bitów na dwie 28-bitowe części.</li>
                     <li>Powtórzenie 16 razy tych samych operacji, nazywanych funkcjami Feistela, przy użyciu przekazanego klucza</li>
                 </ul>
             </div>
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc3">
                 <img src="/Obrazy/DES-schemat_blokowy.png" alt="Schemat Blokowy Algorytmu DES">
                 <p style="padding-left: 20%;">Schemat Blokowy Algorytmu DES</p>
             </div>
         </div>
         <div class="PictureText" id="PictureText_AES">
-            <h3 class='text-line'><span>AES (Advanced Encryption Standard)</span></h3>
-            <div class="PictureText-Foto">
+            <h3 class='text-line hidden_efc2'><span>AES (Advanced Encryption Standard)</span></h3>
+            <div class="PictureText-Foto hidden_efc4">
                 <img src="/Obrazy/wizualizacja_AES.png">
                 <p style="padding-left: 15%;">Wizualizacja funkcji rundy AES</p>
             </div>
             <div class="PictureText-Text">
                 
-                <p>
+                <p class="hidden_efc1">
                     AES to symetryczny szyfr blokowy, który został przyjęty przez rząd Stanów Zjednoczonych jako standard szyfrowania w 2001 roku, zastępując starszy algorytm DES. AES jest oparty na algorytmie Rijndaela, którego autorami są belgijscy kryptografowie, Joan Daemen i Vincent Rijmen.
                     AES operuje na 128-bitowych blokach danych i używa kluczy o długości 128, 192 lub 256 bitów. Liczba rund szyfrowania w AES zależy od długości klucza: 10 rund dla klucza 128-bitowego, 12 rund dla 192-bitowego i 14 rund dla 256-bitowego.
                 </p><br>
-                <p>AES bazuje na zasadzie, zwanej siecią substytucji-permutacji. Wykazuje się dużą szybkością pracy zarówno w przypadku sprzętu komputerowego, jak i oprogramowania. W przeciwieństwie do swego poprzednika, algorytmu DES, AES nie używa Sieci Feistela. AES posiada określony rozmiar bloku – 128 bitów, natomiast rozmiar klucza wynosi 128, 192, lub 256 bitów. Funkcja substytucyjna ma bardzo oryginalną konstrukcję, która uodparnia ten algorytm na znane ataki.</p>
+                <p class="hidden_efc1">AES bazuje na zasadzie, zwanej siecią substytucji-permutacji. Wykazuje się dużą szybkością pracy zarówno w przypadku sprzętu komputerowego, jak i oprogramowania. W przeciwieństwie do swego poprzednika, algorytmu DES, AES nie używa Sieci Feistela. AES posiada określony rozmiar bloku – 128 bitów, natomiast rozmiar klucza wynosi 128, 192, lub 256 bitów. Funkcja substytucyjna ma bardzo oryginalną konstrukcję, która uodparnia ten algorytm na znane ataki.</p>
             </div>
         </div>
     </main>
+    
+    <button id="go-up-button" class="go-up-button">
+        <img src="/Obrazy/down.png" class="up_img">
+    </button>
     
     <script src="/Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>
     <script src="/Skrypty/animated-text.js"></script>
     <script src="/Skrypty/buttons.js"></script>
     <script src="/Skrypty/encrypt.js"></script>
-
-    <script src="/Skrypty/playfair.js"></script> 
     <footer>Mateusz Zimny</footer>
 </body>
 </html>

@@ -88,6 +88,7 @@ body{
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
     background-color: var(--background1);
+    overflow-x: hidden;
 }
 
 .PictureText-Text{
@@ -123,7 +124,7 @@ body{
     padding: 5vh 10% 5vh 10%;
     background-color: var(--background2);
     box-shadow: 0px 0px 100px  var(--background2);
-
+    overflow-x: hidden;
 }
 
 .TextPicture-Text{
@@ -183,7 +184,7 @@ body{
     clear: both;
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
-
+    overflow-x: hidden;
     background-color: var(--background2);
 }
 
@@ -206,6 +207,7 @@ body{
     overflow: auto;
     padding: 5vh 10% 5vh 10%;
     background-color: var(--background12);
+    overflow-x: hidden;
 }
 
 .Content_Block3_Left,.Content_Block3_Right{
@@ -446,11 +448,11 @@ button:hover {
     padding: 5vh 10% 5vh 10%;
     background-color: var(--background22);
     box-shadow: 0px 0px 20px  var(--background22);
-
 }
 
 .block1,.block2{
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .block1-Left,.block1-Right{
@@ -708,7 +710,7 @@ h3 {
 }
 
 #key1{
-    margin-bottom: 3.9vh;
+    margin-bottom: 4.6vh;
 }
 
 h4{

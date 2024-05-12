@@ -24,7 +24,7 @@ function animateText(event) {
         }
         
         iteration += 1 / 3;
-    }, 50);
+    }, 25);
 }
 
 document.querySelectorAll("#animatedText").forEach(element => {
@@ -32,35 +32,18 @@ document.querySelectorAll("#animatedText").forEach(element => {
     window.addEventListener('load', () => animateText({target: element}));
 });
 
-// document.querySelectorAll(".hamburger-menu #animatedText").forEach(element => {
-//     let isAnimating = false; // Dodajemy flagę, która będzie śledzić, czy animacja jest już w trakcie
-//     setInterval(function() {
-//         const test = document.querySelector('.hamburger-menu');
-//         if (test && test.classList.contains('active') && !isAnimating) {
-//             isAnimating = true; // Ustawiamy flagę na true, ponieważ zaczynamy animację
-//             animateText({target: element});
-//         } else if (!test.classList.contains('active')) {
-//             isAnimating = false; // Resetujemy flagę na false, ponieważ animacja się zakończyła
-//         }
-//     }, 100); // Sprawdź co sekundę
-// });
-
 document.querySelectorAll(".hamburger-menu #animatedText").forEach(element => {
-    let isAnimating = false; // Dodajemy flagę, która będzie śledzić, czy animacja jest już w trakcie
+    let isAnimating = false; 
     setInterval(function() {
         const test = document.querySelector('.hamburger-menu');
         if (test && test.classList.contains('active') && !isAnimating) {
-            isAnimating = true; // Ustawiamy flagę na true, ponieważ zaczynamy animację
+            isAnimating = true; 
             animateText({target: element});
         } else if (!test.classList.contains('active')) {
-            isAnimating = false; // Resetujemy flagę na false, ponieważ animacja się zakończyła
+            isAnimating = false; 
         }
-    }, 100); // Sprawdź co sekundę
+    }, 100);
 });
-
-
-
-
 
 
 var parents = document.querySelectorAll('.hover');
@@ -82,7 +65,7 @@ parents2.forEach(parent => {
         animateText({target: element4});
     }
 });
-// nr 3
+
 var parents3 = document.querySelectorAll('#hover3');
 parents3.forEach(parent => {
     parent.onmouseover = function() {
@@ -92,7 +75,7 @@ parents3.forEach(parent => {
         animateText({target: element6});
     }
 });
-// nr 4
+
 var parents4 = document.querySelectorAll('#hover4');
 parents4.forEach(parent => {
     parent.onmouseover = function() {
@@ -102,7 +85,7 @@ parents4.forEach(parent => {
         animateText({target: element8});
     }
 });
-// nr 5
+
 var parents5 = document.querySelectorAll('#hover5');
 parents5.forEach(parent => {
     parent.onmouseover = function() {
@@ -110,6 +93,16 @@ parents5.forEach(parent => {
         var element10 = document.querySelector('#animatedText10');
         animateText({target: element9});
         animateText({target: element10});
+    }
+});
+
+var parents6 = document.querySelectorAll('#hover6');
+parents6.forEach(parent => {
+    parent.onmouseover = function() {
+        var element11 = document.querySelector('#animatedText11');
+        var element12 = document.querySelector('#animatedText12');
+        animateText({target: element11});
+        animateText({target: element12});
     }
 });
 

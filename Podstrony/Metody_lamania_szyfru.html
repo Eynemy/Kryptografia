@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/Obrazy/icon.ico">
     <link rel="stylesheet" href="/Style/pattern.css">
-    <link rel="stylesheet" href="/Style/wstep.css">
+    <link rel="stylesheet" href="/Style/subpages.css">
+    <script defer src="/Skrypty/scroll_animation.js"></script>
     <title>Kryptografia</title>
 </head>
 <body>
@@ -21,11 +22,13 @@
         </div>
         <nav>
             <span class="list_icon1" style="display: none;">&#10065;</span>
-            <a href="#headline1" id="animatedText" data-value="przestawieniowe">przestawieniowe</a>
+            <a href="#headline1" id="animatedText" data-value="statystyczny">statystyczny</a>
             <span class="list_icon2" style="display: none;">&#10065;</span>
-            <a href="#headline2" id="animatedText" data-value="podstawieniowe">podstawieniowe</a>
+            <a href="#headline2" id="animatedText" data-value="brutalny">brutalny</a>
             <span class="list_icon3" style="display: none;">&#10065;</span>
-            <a href="#headline3" id="animatedText" data-value="synchroniczne">synchroniczne</a>
+            <a href="#headline3" id="animatedText" data-value="slownikowy">slownikowy</a>
+            <span class="list_icon4" style="display: none;">&#10065;</span>
+            <a href="#headline4" id="animatedText" data-value="kryptoanalizy">kryptoanalizy</a>
         </nav>
         <div class="hamburger-button">
             <span></span>
@@ -34,54 +37,79 @@
         </div>
         <div class="hamburger-menu">
             <div class="hover">
-                <a href="index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <a href="/index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText1" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText2" data-value="001">001</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover2">
+                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link" id="animatedText" data-value="WPROWADZENIE">WPROWADZENIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText3" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText4" data-value="001">001</b> 
+                    <b id="animatedText4" data-value="002">002</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover3">
+                <a href="/Podstrony/Metody_Szyfrowania.html" class="hmb_link" id="animatedText" data-value="SZYFROWANIE">SZYFROWANIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
-                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText2" data-value="001">001</b> 
+                    <b id="animatedText5" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText6" data-value="003">003</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover4">
+                <a href="/Podstrony/Metody_lamania_szyfru.html" class="hmb_link2 selected" id="animatedText2" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
+                <span class="hmb-comment selected2" id="hmb-comment-text">
+                    <b id="animatedText_null" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText_null" data-value="004">004</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover5">
+                <a href="/Podstrony/Zastosowanie.html" class="hmb_link" id="animatedText" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText9" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText10" data-value="005">005</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover6">
+                <a href="/Podstrony/Informacje.html" class="hmb_link" id="animatedText" data-value="INFORMACJE">INFORMACJE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText11" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText12" data-value="006">006</b> 
                 </span>
             </div>
         </div>
     </div>
     <main>
+        <span id="headline0"></span>
         <div class="mini_hero_section">
             <div class="overlay">
-                <h1>Metody łamania szyfru</h1>
+                <h1 class="hidden_efc1">Metody łamania szyfru</h1>
             </div>
+            <span id="headline1"></span>
         </div>
-        <div class="PictureText" id="headline1">
+        <div class="PictureText">
             
-            <div class="PictureText-Foto">
-                <img src="/Obrazy/wystepowanie_liter.png">
-                <p style="padding-left: 25%;">Występowanie liter w języku polskim</p>
+            <div class="PictureText-Foto hidden_efc2">
+                <img src="/Obrazy/statystyczny.jpeg">
             </div>
             <div class="PictureText-Text">
-                <h2>Atak statystyczny</h2><br>
-                <p>
+                <h2 class="hidden_efc3">Atak statystyczny</h2><br>
+                <p class="hidden_efc3">
                     Metoda kryptoanalizy, która polega na analizie częstości występowania liter, 
                     słów lub innych elementów tekstu jawnego w tekście zaszyfrowanym. Celem takich 
                     ataków jest znalezienie klucza lub algorytmu szyfrującego, który pozwoli 
                     odszyfrować wiadomość. Ataki statystyczne wykorzystują fakt, że niektóre języki 
                     mają charakterystyczny rozkład częstości liter lub innych cech tekstu, które mogą 
                     być wykryte w tekście zaszyfrowanym. 
-                </p>
+                </p><br>
+                <img src="/Obrazy/wystepowanie_liter.png" style="border-radius: 0px; padding-left: 10%;" class="hidden_efc2">
+                <p style="text-align: center;" class="hidden_efc2">Występowanie liter w języku polskim</p>
             </div>
+            <span id="headline2"></span>
         </div>
-        <div class="TextPicture" id="headline2">
-            <div class="PictureText-Text">
+        <div class="TextPicture">
+            <div class="PictureText-Text hidden_efc2">
                 <h2>Atak brutalny (brute-force)</h2><br>
                 <p>
                     Metoda łamania zabezpieczeń kryptograficznych, która polega na systematycznym 
@@ -93,17 +121,18 @@
                     implementacji szyfrowania. 
                 </p>
             </div>
-            <div class="PictureText-Foto">
-                <img src="/Obrazy/szyfry_podstawne.jpeg">
+            <div class="PictureText-Foto hidden_efc3">
+                <img src="/Obrazy/brute-force.jpeg">
             </div>
+            <span id="headline3"></span>
         </div>
-        <div class="PictureText" id="headline3">
-            <div class="PictureText-Foto">
-                <img src="/Obrazy/szyfry_przestawieniowe.jpeg">
+        <div class="PictureText">
+            <div class="PictureText-Foto hidden_efc2">
+                <img src="/Obrazy/dictonary-attack.jpeg">
             </div>
             <div class="PictureText-Text">
-                <h2>Atak słownikowy (dictionary attack)</h2><br>
-                <p>
+                <h2 class="hidden_efc3">Atak słownikowy (dictionary attack)</h2><br>
+                <p class="hidden_efc1">
                     Metoda kryptoanalizy, która polega na analizie częstości występowania liter, 
                     słów lub innych elementów tekstu jawnego w tekście zaszyfrowanym. Celem takich 
                     ataków jest znalezienie klucza lub algorytmu szyfrującego, który pozwoli 
@@ -111,10 +140,11 @@
                     mają charakterystyczny rozkład częstości liter lub innych cech tekstu, które mogą 
                     być wykryte w tekście zaszyfrowanym. 
                 </p>
+                <span id="headline4"></span>
             </div>
         </div>
-        <div class="TextPicture" id="headline4">
-            <div class="PictureText-Text">
+        <div class="TextPicture">
+            <div class="PictureText-Text hidden_efc4">
                 <h2>Atak kryptoanalizy (cryptanalysis)</h2><br>
                 <p>
                     Atak kryptoanalizy to proces odkrywania ukrytych informacji poprzez analizę 
@@ -125,11 +155,15 @@
                     które umożliwią złamanie szyfru lub podsłuchanie komunikacji. 
                 </p>
             </div>
-            <div class="PictureText-Foto">
-                <img src="/Obrazy/szyfry_podstawne.jpeg">
+            <div class="PictureText-Foto hidden_efc2">
+                <img src="/Obrazy/cryptanalysis.jpeg">
             </div>
         </div>
     </main>
+    
+    <button id="go-up-button" class="go-up-button">
+        <img src="/Obrazy/down.png" class="up_img">
+    </button>
     
     <script src="/Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>

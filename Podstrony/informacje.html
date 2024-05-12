@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/Obrazy/icon.ico">
     <link rel="stylesheet" href="/Style/pattern.css">
-    <link rel="stylesheet" href="/Style/wstep.css">
+    <link rel="stylesheet" href="/Style/subpages.css">
+    <link rel="stylesheet" href="/Style/informacje.css">
+    <script defer src="/Skrypty/scroll_animation.js"></script>
     <title>Kryptografia</title>
 </head>
 <body>
@@ -34,24 +36,45 @@
         </div>
         <div class="hamburger-menu">
             <div class="hover">
-                <a href="index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+                <a href="/index.html" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText1" data-value="STRONA">STRONA</b><br>
                     <b id="animatedText2" data-value="001">001</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover2">
+                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link" id="animatedText" data-value="WPROWADZENIE">WPROWADZENIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText3" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText4" data-value="001">001</b> 
+                    <b id="animatedText4" data-value="002">002</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover3">
+                <a href="/Podstrony/Metody_Szyfrowania.html" class="hmb_link" id="animatedText" data-value="SZYFROWANIE"> SZYFROWANIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
-                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText2" data-value="001">001</b> 
+                    <b id="animatedText5" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText6" data-value="003">003</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover4">
+                <a href="/Podstrony/Metody_lamania_szyfru.html" class="hmb_link" id="animatedText" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText7" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText8" data-value="004">004</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover5">
+                <a href="/Podstrony/Zastosowanie.html" class="hmb_link" id="animatedText" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText9" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText10" data-value="005">005</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover6">
+                <a href="/Podstrony/Informacje.html" class="hmb_link2 selected" id="animatedText2" data-value="INFORMACJE">INFORMACJE</a>
+                <span class="hmb-comment selected2" id="hmb-comment-text">
+                    <b id="animatedText_null" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText_null" data-value="006">006</b> 
                 </span>
             </div>
         </div>
@@ -59,33 +82,116 @@
     <main>
         <div class="mini_hero_section">
             <div class="overlay">
-                <h1>INFORMACJE</h1>
+                <h1 class="hidden_efc1">INFORMACJE</h1>
             </div>
         </div>
         <div class="Text-blocks" id="headline1">
-            <h3 class='text-line'><span>O stronie i autorze</span></h3>
-            <p class="info">Nazywam się Mateusz Zimny, mam 18 lat i jestem uczniem klasy IV na kierunku “Technik Informatyk” w Technikum im. Stanisława Staszica Nowym Tomyślu. Strona została wykonana na potrzeby XVI edycji konkursu „Zobaczyć Matematykę” (2024) organizowanym przez Akademię Górniczo-Hutniczą im. Stanisława Staszica w Krakowie. </p>
+            <h3 class='text-line hidden_efc2'><span>O stronie i autorze</span></h3>
+            <p class="info hidden_efc1">Nazywam się Mateusz Zimny, mam 18 lat i jestem uczniem klasy IV na kierunku “Technik Informatyk” w Technikum im. Stanisława Staszica Nowym Tomyślu. Strona została wykonana na potrzeby XVI edycji konkursu „Zobaczyć Matematykę” (2024) organizowanym przez Akademię Górniczo-Hutniczą im. Stanisława Staszica w Krakowie. </p>
         </div>
-        <div class="Text-blocks" id="headline2">
-            <h3 class='text-line'><span>Źródła</span></h3>
-            <p class="info"><a href="">Wikipedia</a> </p>
-            <p class="info"><a href="">Unsplash</a> </p>
-            <p class="info"><a href="http://www.algorytm.org">Algorytm.org</a></p>
-            <p class="info"><a href="https://www.crypto-it.net/pl/ ">Crypto-it.net</a></p>
+        <div class="zrodla" id="headline2">
+            <h3 class='text-line hidden_efc2' id="info_h3"><span>Źródła</span></h3>
+            <div class="grid">
+                <div id="cards">
+                    <div class="card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name" href="https://www.wikipedia.org">Wikipedia</a>
+                      </div>
+                    </div>
+                    <div class="card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name" href="http://www.algorytm.org">Algorytm.org</a>
+                      </div>
+                    </div>
+                    <div class="card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name" href="https://www.crypto-it.net/pl/">Crypto-it.net</a>
+                      </div>
+                    </div>
+            </div>
         </div>
-        <div class="Text-blocks" id="headline3">
-            <h3 class='text-line'><span>Programy</span></h3>
-            <p class="info">HTML 5</p>
-            <p class="info">CSS 5</p>
-            <p class="info">JavaScript</p>
-            <p class="info">Jquery</p>
-            <p class="info">Gimp</p>
         </div>
-        <div class="Text-blocks" id="headline4">
-            <h3 class='text-line'><span>Bibliografia</span></h3>
-            <p class="info"> </p>
+        <div class="Text-blocks v2" id="headline3">
+            <h3 class='text-line hidden_efc2'><span>Programy</span></h3>
+
+            <div class="grid">
+                <div id="cards">
+                    <div class="card card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name">HTML 5</a>
+                      </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name">CSS 5</a>
+                      </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                      <div class="card-content">
+                        <a class="card-name">JavaScript</a>
+                      </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                          <a class="card-name" href="https://jquery.com">Jquery</a>
+                        </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                          <a class="card-name" href="https://www.gimp.org">Gimp</a>
+                        </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                          <a class="card-name" href="https://apps.microsoft.com/detail/9pcfs5b6t72h?hl=pl-PL&gl=PL">Paint</a>
+                        </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                          <a class="card-name" href="https://www.canva.com">Canva</a>
+                        </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                          <a class="card-name" href="https://code.visualstudio.com">Visual Studio <br>Code</a>
+                        </div>
+                    </div>
+            </div>
+        </div></div>
+        
+        <div class="Text-blocks v3" id="headline3">
+            <h3 class='text-line hidden_efc2'><span>Bibliografia</span></h3>
+            
+            <div class="grid">
+                <div id="cards">
+                    <div class="card card hidden_efc2">
+                    <div class="card-content">
+                        <a class="card-name" href="https://commons.wikimedia.org/wiki/Main_Page" style="padding-left: 20%;">Wikimedia Commons</a>
+                    </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                    <div class="card-content">
+                        <a class="card-name" href="https://unsplash.com">Unsplash</a>
+                    </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                    <div class="card-content">
+                        <a class="card-name">Praca własna</a>
+                    </div>
+                    </div>
+                    <div class="card card hidden_efc2">
+                        <div class="card-content">
+                        <a class="card-name">AI</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </main>
+    
+    <button id="go-up-button" class="go-up-button">
+        <img src="/Obrazy/down.png" class="up_img">
+    </button>
     
     <script src="/Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>

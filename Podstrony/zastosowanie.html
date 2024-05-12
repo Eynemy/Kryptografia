@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/Obrazy/icon.ico">
     <link rel="stylesheet" href="/Style/pattern.css">
-    <link rel="stylesheet" href="/Style/wstep.css">
+    <link rel="stylesheet" href="/Style/subpages.css">
+    <script defer src="/Skrypty/scroll_animation.js"></script>
     <title>Kryptografia</title>
 </head>
 <body>
@@ -20,12 +21,6 @@
             </div>
         </div>
         <nav>
-            <span class="list_icon1" style="display: none;">&#10065;</span>
-            <a href="#headline1" id="animatedText" data-value="przestawieniowe">przestawieniowe</a>
-            <span class="list_icon2" style="display: none;">&#10065;</span>
-            <a href="#headline2" id="animatedText" data-value="podstawieniowe">podstawieniowe</a>
-            <span class="list_icon3" style="display: none;">&#10065;</span>
-            <a href="#headline3" id="animatedText" data-value="synchroniczne">synchroniczne</a>
         </nav>
         <div class="hamburger-button">
             <span></span>
@@ -40,74 +35,108 @@
                     <b id="animatedText2" data-value="001">001</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover2">
+                <a href="/Podstrony/Wprowadzenie.html" class="hmb_link" id="animatedText" data-value="WPROWADZENIE">WPROWADZENIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
                     <b id="animatedText3" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText4" data-value="001">001</b> 
+                    <b id="animatedText4" data-value="002">002</b> 
                 </span>
             </div>
-            <div class="hover">
-                <a href="" class="hmb_link" id="animatedText" data-value="STRONA GLOWNA">STRONA GLOWNA</a>
+            <div class="hover" id="hover3">
+                <a href="/Podstrony/Metody_Szyfrowania.html" class="hmb_link" id="animatedText" data-value="SZYFROWANIE"> SZYFROWANIE</a>
                 <span class="hmb-comment" id="hmb-comment-text">
-                    <b id="animatedText1" data-value="STRONA">STRONA</b><br>
-                    <b id="animatedText2" data-value="001">001</b> 
+                    <b id="animatedText5" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText6" data-value="003">003</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover4">
+                <a href="/Podstrony/Metody_lamania_szyfru.html" class="hmb_link" id="animatedText" data-value="ŁAMANIE SZYFRU">ŁAMANIE SZYFRU</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText7" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText8" data-value="004">004</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover5">
+                <a href="/Podstrony/Zastosowanie.html" class="hmb_link2 selected" id="animatedText2" data-value="ZASTOSOWANIE">ZASTOSOWANIE</a>
+                <span class="hmb-comment selected2" id="hmb-comment-text">
+                    <b id="animatedText_null" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText_null" data-value="005">005</b> 
+                </span>
+            </div>
+            <div class="hover" id="hover6">
+                <a href="/Podstrony/Informacje.html" class="hmb_link" id="animatedText" data-value="INFORMACJE">INFORMACJE</a>
+                <span class="hmb-comment" id="hmb-comment-text">
+                    <b id="animatedText11" data-value="STRONA">STRONA</b><br>
+                    <b id="animatedText12" data-value="006">006</b> 
                 </span>
             </div>
         </div>
     </div>
     <main>
+        <span id="headline0"></span>
         <div class="mini_hero_section">
             <div class="overlay">
-                <h1>Zastosowanie</h1>
+                <h1 class="hidden_efc1">Zastosowania</h1>
             </div>
         </div>
-        <div class="PictureText" id="headline1">
+        <span id="headline1"></span><br>
+        <div class="PictureText">
             
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/osobiste.jpeg">
             </div>
-            <div class="PictureText-Text">
+            <div class="PictureText-Text hidden_efc3">
                 <h2>Osobiste</h2><br>
-                <p>
-                    Kryptografia jest nieodzowna dla zapewnienia prywatności, bezpieczeństwa i integralności danych w naszym codziennym życiu cyfrowym. Bezpieczne przesyłanie informacji przez internet, chronienie poufności danych osobowych i zapewnienie integralności danych to tylko niektóre z jej zastosowań. Dzięki niej informacje są trudne do rozszyfrowania przez osoby, które nie znają klucza rozszyfrowującego.
+                <p><b>Zabezpieczenie danych osobowych:</b> Kryptografia jest nieodzowna w ochronie naszych danych osobowych. Szyfrowanie hasła, numeru karty kredytowej i innych poufnych informacji pomaga zapobiegać nieautoryzowanemu dostępowi.
+                    <br><br>
+                    <b>Bezpieczne komunikowanie się:</b> Aplikacje do szyfrowania wiadomości, e-maili i połączeń telefonicznych wykorzystują kryptografię, aby zapewnić poufność komunikacji.
                 </p>
             </div>
         </div>
-        <div class="TextPicture" id="headline2">
-            <div class="PictureText-Text">
+        <div class="TextPicture">
+            <span id="headline2"></span><br>
+            <div class="PictureText-Text hidden_efc4">
                 <h2>Administarcja</h2><br>
-                <p>
-                    Kryptografia jest niezbędna w administracji publicznej. Przykładowe zastosowania to zabezpieczanie sprzętu hasłami, kontrola dostępu do pomieszczeń, zasobów informatycznych itp., zapewnienie bezpieczeństwa podczas internetowych transakcji płatniczych.
+                <p><b>Bezpieczeństwo danych urzędowych:</b> W administracji publicznej kryptografia jest stosowana w systemach informatycznych, aby chronić dane urzędowe przed nieuprawnionym dostępem.
+                    <br><br>
+                    <b>Podpis elektroniczny:</b> Kryptografia umożliwia stosowanie bezpiecznych podpisów elektronicznych w dokumentach.
                 </p>
             </div>
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/administacja.jpeg">
             </div>
         </div>
         <div class="PictureText" id="headline3">
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/bankowosc.jpeg">
             </div>
-            <div class="PictureText-Text">
+            <div class="PictureText-Text hidden_efc3">
                 <h2>Bankowość</h2><br>
                 <p>
                     W sektorze bankowym kryptografia jest wykorzystywana do zabezpieczania transakcji online i poufnego przechowywania danych finansowych. Technologia blockchain, która wykorzystuje kryptografię, ma wiele zastosowań w bankowości, m.in. w bezpieczeństwie, przelewach czy w historiach transakcji.
                 </p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <span id="headline4"></span><br>
             </div>
+            
         </div>
-        <div class="TextPicture" id="headline4">
-            <div class="PictureText-Text">
+        <div class="TextPicture">
+            <div class="PictureText-Text hidden_efc4">
                 <h2>Wojsko</h2><br>
-                <p>
-                    Kryptografia jest niezbędna w wojsku. Przykładowe zastosowania to zabezpieczanie sprzętu hasłami, kontrola dostępu do pomieszczeń, zasobów informatycznych itp., zapewnienie bezpieczeństwa podczas internetowych transakcji płatniczych. Kryptografia znajduje zastosowanie w wojskowości oraz dyplomacji.
-                </p>
+                <p><b>Bezpieczeństwo komunikacji:</b> W wojsku kryptografia jest kluczowa do bezpiecznego przekazywania informacji między jednostkami.
+                    <b>Szyfry:</b> W historii wojskowej kryptografia była wykorzystywana do tworzenia szyfrów, odczytywania tajnych wiadomości tak żeby osoby trzecie nie miały do nich dostępu.</p>
+                
+                
             </div>
-            <div class="PictureText-Foto">
+            <div class="PictureText-Foto hidden_efc2">
                 <img src="/Obrazy/military.jpeg">
             </div>
         </div>
     </main>  
+    
+    <button id="go-up-button" class="go-up-button">
+        <img src="/Obrazy/down.png" class="up_img">
+    </button>
     
     <script src="/Skrypty/scroll-bar.js"></script>
     <script src="/Skrypty/hamburger-menu.js"></script>
