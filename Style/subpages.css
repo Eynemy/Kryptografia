@@ -32,7 +32,7 @@ body{
 
 
 .hero_section{
-    background-image: url("/Obrazy/tlo_hero.gif");
+    background-image: url("../Obrazy/tlo_hero.gif");
     background-position: calc(100% + 20px);
     background-size:cover;
     padding-top: 10vh;
@@ -60,7 +60,7 @@ body{
 
 
 .mini_hero_section{
-    background-image: url("/Obrazy/background_hero.jpg");
+    background-image: url("../Obrazy/background_hero.jpg");
     background-position:  0%;
     background-size: cover;
     padding-top: 12vh;
